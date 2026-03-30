@@ -22,6 +22,10 @@ python -m docsgen.cli build-all --db Reports --schema dbo --max-conns 8 procedur
 # выгрузка текстов всех процедур в .sql
 python -m docsgen.cli export-procedure-sources --db Reports --schema dbo --max-conns 8
 # итоговая иерархия: build/sql/procedures/<db>/<schema>/<procedure>.sql
+
+# выгрузка SQL Agent jobs и шагов (из msdb)
+python -m docsgen.cli export-job-sources --msdb msdb --name-filter report --max-conns 8
+# итоговая иерархия: build/sql/jobs/<msdb>/<job_name>/{job.json,01_step.sql,...}
 ```
 
 ## Подключение к БД
@@ -39,6 +43,7 @@ python -m docsgen.cli export-procedure-sources --db Reports --schema dbo --max-c
 - `DOCSGEN_DEFAULT_DB`
 - `DOCSGEN_OUT_DIR`
 - `DOCSGEN_PROC_SRC_DIR`
+- `DOCSGEN_JOB_SRC_DIR`
 
 ## Архитектура
 ```

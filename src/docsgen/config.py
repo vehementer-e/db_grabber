@@ -38,6 +38,7 @@ USE_ENV_DB_CREDENTIALS = all([DB_HOST, DB_PORT, DB_USER, DB_PASSWORD])
 # ---------- output ----------
 OUT_DIR = os.getenv("DOCSGEN_OUT_DIR", "build/docs/autogen_docs")
 PROCEDURE_SOURCES_DIR = os.getenv("DOCSGEN_PROC_SRC_DIR", "build/sql/procedures")
+JOB_SOURCES_DIR = os.getenv("DOCSGEN_JOB_SRC_DIR", "build/sql/jobs")
 DEFAULT_SCHEMA = os.getenv("DOCSGEN_DEFAULT_SCHEMA", "dbo")
 
 # ---------- links ----------

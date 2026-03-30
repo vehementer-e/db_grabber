@@ -13,6 +13,7 @@ from docsgen.jgen.table import get_table_metadata
 
 from docsgen.batch import build_all
 from docsgen.procedure_source import export_all_procedure_sources
+from docsgen.job_source import export_all_job_sources
 
 
 def parse_object_ref(ref: str):
@@ -109,6 +110,19 @@ def cmd_export_procedure_sources(args):
         )
     )
 
+
+def cmd_export_job_sources(args):
+    asyncio.run(
+        export_all_job_sources(
+            msdb_name=(args.msdb or "msdb"),
+            name_filter=args.name_filter,
+            limit=args.limit,
+            max_conns=args.max_conns,
+            out_dir=args.out_dir,
+            fail_log=args.fail_log,
+        )
+    )
+
 def main():
     p = argparse.ArgumentParser("docsgen")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -150,6 +164,18 @@ def main():
     p_export.add_argument("--out-dir", default=None, help="Output dir (default build/sql/procedures)")
     p_export.add_argument("--fail-log", default=None, help="Optional path to failure log")
     p_export.set_defaults(func=cmd_export_procedure_sources)
+
+    p_jobs = sub.add_parser(
+        "export-job-sources",
+        help="Export SQL Agent jobs and their steps from msdb",
+    )
+    p_jobs.add_argument("--msdb", default="msdb", help="Jobs catalog DB (default: msdb)")
+    p_jobs.add_argument("--name-filter", default=None, help="Substring filter for job name")
+    p_jobs.add_argument("--limit", type=int, default=None, help="Optional limit")
+    p_jobs.add_argument("--max-conns", type=int, default=10, help="Max DB connections")
+    p_jobs.add_argument("--out-dir", default=None, help="Output dir (default build/sql/jobs)")
+    p_jobs.add_argument("--fail-log", default=None, help="Optional path to failure log")
+    p_jobs.set_defaults(func=cmd_export_job_sources)
 
     args = p.parse_args()
     args.func(args)
