@@ -12,6 +12,7 @@ from docsgen.jgen.function import get_function_metadata
 from docsgen.jgen.table import get_table_metadata
 
 from docsgen.batch import build_all
+from docsgen.procedure_source import export_all_procedure_sources
 
 
 def parse_object_ref(ref: str):
@@ -95,6 +96,19 @@ def cmd_build_all(args):
     )
 
 
+
+def cmd_export_procedure_sources(args):
+    asyncio.run(
+        export_all_procedure_sources(
+            db=(args.db or DEFAULT_DATABASE),
+            schema_filter=args.schema,
+            limit=args.limit,
+            max_conns=args.max_conns,
+            out_dir=args.out_dir,
+            fail_log=args.fail_log,
+        )
+    )
+
 def main():
     p = argparse.ArgumentParser("docsgen")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -124,6 +138,18 @@ def main():
     p_all.add_argument("--fail-log", default=None, help="Optional path to failure log")
     p_all.add_argument("type", choices=["procedure", "function", "table"])
     p_all.set_defaults(func=cmd_build_all)
+
+    p_export = sub.add_parser(
+        "export-procedure-sources",
+        help="Export ALL procedure SQL texts to <db>/<schema>/<procedure>.sql",
+    )
+    p_export.add_argument("--db", default=None, help="Название БД")
+    p_export.add_argument("--schema", default=None, help="Optional schema filter")
+    p_export.add_argument("--limit", type=int, default=None, help="Optional limit")
+    p_export.add_argument("--max-conns", type=int, default=10, help="Max DB connections")
+    p_export.add_argument("--out-dir", default=None, help="Output dir (default build/sql/procedures)")
+    p_export.add_argument("--fail-log", default=None, help="Optional path to failure log")
+    p_export.set_defaults(func=cmd_export_procedure_sources)
 
     args = p.parse_args()
     args.func(args)

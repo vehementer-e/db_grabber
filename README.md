@@ -14,27 +14,44 @@
 4. Рендерим Markdown по шаблону (Jinja2).
 5. Сохраняем файл `<schema>.<name>.md` и обновляем общий `summary.md`.
 
+## CLI примеры
+```bash
+# как на скриншоте: батч-генерация документации
+python -m docsgen.cli build-all --db Reports --schema dbo --max-conns 8 procedure
+
+# выгрузка текстов всех процедур в .sql
+python -m docsgen.cli export-procedure-sources --db Reports --schema dbo --max-conns 8
+# итоговая иерархия: build/sql/procedures/<db>/<schema>/<procedure>.sql
+```
+
+## Подключение к БД
+По умолчанию используется trusted connection (актуально для запуска на Windows под текущим пользователем):
+- `Trusted_Connection=yes`
+
+Если **заданы все** переменные окружения ниже, включается SQL-аутентификация и они имеют приоритет:
+- `DB_HOST`
+- `DB_PORT`
+- `DB_USER`
+- `DB_PASSWORD`
+
+Дополнительные env-переменные:
+- `DOCSGEN_SERVER`
+- `DOCSGEN_DEFAULT_DB`
+- `DOCSGEN_OUT_DIR`
+- `DOCSGEN_PROC_SRC_DIR`
+
 ## Архитектура
 ```
 repo/
-  misc/                # черновики, заметки, временные материалы
-  source/
-    template/          # исходные шаблоны/примеры (если используются)
   src/
     docsgen/
-      examples/        # примеры входных JSON
-      io/              # загрузка JSON, запись .md
-      models/          # pydantic-модели входных данных
-      pipeline/        # orchestrator, validators, transformers, analyzers
-      render/          # jinja2 и шаблоны рендера
-      test/            # простые юнит‑тесты
-      utils/           # утилиты (текст, хэши, и пр.)
       cli.py
+      batch.py
+      procedure_source.py   # экспорт SQL текстов процедур
+      async_db.py
+      db.py
       config.py
-      logging_conf.py
-  README.md
 ```
 
 ## Статус
-WIP: базовая генерация для процедур. 
-NEXT: таблицы/функции, добавлени анализатора SQL?
+WIP: базовая генерация для процедур/таблиц/функций + экспорт исходников процедур.

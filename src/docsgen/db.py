@@ -9,11 +9,29 @@ from docsgen.config import (
     CONNECT_TIMEOUT,
     CONNECT_RETRIES,
     CONNECT_RETRY_BASE_DELAY,
+    USE_ENV_DB_CREDENTIALS,
+    DB_HOST,
+    DB_PORT,
+    DB_USER,
+    DB_PASSWORD,
 )
 
 
 def _conn_str(database: str | None = None) -> str:
     db = database or DEFAULT_DATABASE
+
+    if USE_ENV_DB_CREDENTIALS:
+        server = f"{DB_HOST},{DB_PORT}"
+        return (
+            "DRIVER={ODBC Driver 17 for SQL Server};"
+            f"SERVER={server};"
+            f"DATABASE={db};"
+            f"UID={DB_USER};"
+            f"PWD={DB_PASSWORD};"
+            "Encrypt=yes;"
+            "TrustServerCertificate=yes;"
+        )
+
     return (
         "DRIVER={ODBC Driver 17 for SQL Server};"
         f"SERVER={SERVER};"
