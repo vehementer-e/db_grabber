@@ -1,0 +1,97 @@
+{
+  "object_type": "procedure",
+  "db": "Reports",
+  "schema": "collection",
+  "name": "reportCollectionNonPaymentReason",
+  "title": "collection.reportCollectionNonPaymentReason",
+  "parameters": [
+    {
+      "name": "@year",
+      "type": "int",
+      "is_output": false
+    },
+    {
+      "name": "@month", 
+      "type": null,
+      "is_output": false
+    },
+    {
+      "name": "@is_deBug",
+      "type": "null",
+      "is_output": false
+    }
+  ],
+  "dependencies": {
+    "depends_on": [
+      {
+        "objType": "object",
+        "db": "dwh2",
+        "schema": "dbo",
+        "name": "dm_CMRStatBalance",
+        "relation": "other"
+      },
+      {
+        "objType": "object",
+        "db": "dwh2",
+        "schema": "hub",
+        "name": "ДоговорЗайма",
+        "relation": "other"
+      },
+      {
+        "objType": "object",
+        "db": "dwh2",
+        "schema": "hub",
+        "name": "Клиенты",
+        "relation": "other"
+      },
+      {
+        "objType": "object",
+        "db": "Reports",
+        "name": "T",
+        "relation": "other"
+      },
+      {
+        "objType": "table",
+        "db": "Reports",
+        "schema": "collection",
+        "name": "CollectionNonPaymentReasonFullDetail",
+        "relation": "other"
+      },
+      {
+        "objType": "object",
+        "db": "stg",
+        "schema": "_collection",
+        "name": "Communications",
+        "relation": "selectsFrom"
+      },
+      {
+        "objType": "object",
+        "db": "stg",
+        "schema": "_collection",
+        "name": "Customers",
+        "relation": "selectsFrom"
+      },
+      {
+        "objType": "object",
+        "db": "stg",
+        "schema": "_collection",
+        "name": "Deals",
+        "relation": "selectsFrom"
+      },
+      {
+        "objType": "object",
+        "db": "stg",
+        "schema": "_collection",
+        "name": "NonPaymentReason",
+        "relation": "selectsFrom"
+      },
+      {
+        "objType": "object",
+        "db": "stg",
+        "schema": "_loginom",
+        "name": "Collection_Client_Stage_history",
+        "relation": "selectsFrom"
+      }
+    ]
+  }
+}

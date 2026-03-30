@@ -1,0 +1,118 @@
+# **[{{ schema }}.{{ name }}]({{ database | doc_url(object_type, schema, name) }})**
+
+## **Описание**
+{# пока описания нет в JSON — оставляем пусто для ручного заполнения #}
+
+
+## **Колонки**
+| # | Имя | Тип | Nullable | Identity | Default | Collation | Описание |
+|---:|---|---|---|---|---|---|---|
+{% if columns and columns|length > 0 -%}
+{% for c in columns -%}
+| {{ c.ordinal }} | `{{ c.name }}` | {{ c.type }} | {{ "yes" if c.is_nullable else "no" }} | {{ "yes" if c.is_identity else "no" }} | {{ c.default or "" }} | {{ c.collation or "" }} | {{ c.description or "" }} |
+{% endfor -%}
+{% else -%}
+| — | — | — | — | — | — | — | — |
+{% endif %}
+
+
+## **Ограничения**
+
+### Primary Key
+{% if constraints and constraints.primary_key -%}
+**{{ constraints.primary_key.name }}**: {{ constraints.primary_key.columns | join(", ") }}
+{% else -%}
+—
+{% endif %}
+
+### Unique Constraints
+{% if constraints and constraints.unique_constraints and constraints.unique_constraints|length > 0 -%}
+{% for uq in constraints.unique_constraints -%}
+- **{{ uq.name }}**: {{ uq.columns | join(", ") }}
+{% endfor -%}
+{% else -%}
+—
+{% endif %}
+
+### Foreign Keys
+{% if constraints and constraints.foreign_keys and constraints.foreign_keys|length > 0 -%}
+{% for fk in constraints.foreign_keys -%}
+- **{{ fk.name }}** → {{ fk.ref_schema }}.{{ fk.ref_table }}
+  {% for m in fk.columns -%}
+  - {{ m.parent_column }} → {{ m.ref_column }}
+  {% endfor -%}
+{% endfor -%}
+{% else -%}
+—
+{% endif %}
+
+### Check Constraints
+{% if constraints and constraints.check_constraints and constraints.check_constraints|length > 0 -%}
+{% for cc in constraints.check_constraints -%}
+- **{{ cc.name }}**: `{{ cc.definition }}`
+{% endfor -%}
+{% else -%}
+—
+{% endif %}
+
+
+## **Индексы**
+{% if indexes and indexes|length > 0 -%}
+{% for i in indexes -%}
+- **{{ i.name }}** ({{ i.type }}){% if i.is_unique %} [unique]{% endif %}
+  - keys: {{ (i.get("keys") or []) | join(", ") }}
+  {% if i.includes and i.includes|length > 0 -%}
+  - includes: {{ i.includes | join(", ") }}
+  {% endif -%}
+{% endfor -%}
+{% else -%}
+—
+{% endif %}
+
+
+## **Триггеры**
+{% if triggers and triggers|length > 0 -%}
+| Name | Disabled |
+|---|---|
+{% for t in triggers -%}
+| {{ t.name }} | {{ "yes" if t.is_disabled else "no" }} |
+{% endfor -%}
+{% else -%}
+—
+{% endif %}
+
+
+## **Зависимости (от которых зависит)**
+| Тип | DB | Schema | Name | Relation |
+|---|---|---|---|---|
+{% set deps = dependencies.depends_on if dependencies and dependencies.depends_on else [] -%}
+{% if deps|length > 0 -%}
+{% for d in deps -%}
+| {{ d.objType }} | {{ d.db }} | {{ d.schema or "" }} | [{{ d.name }}]({{ d.db | doc_url(d.objType, d.schema or "", d.name) }}) | {{ d.relation }} |
+{% endfor -%}
+{% else -%}
+| — | — | — | — | — |
+{% endif %}
+
+
+## **Зависимости (которые зависят от)**
+| Тип | DB | Schema | Name | Relation |
+|---|---|---|---|---|
+{% set rb = dependencies.required_by if dependencies and dependencies.required_by else [] -%}
+{% if rb|length > 0 -%}
+{% for d in rb -%}
+| {{ d.objType }} | {{ d.db }} | {{ d.schema or "" }} | [{{ d.name }}]({{ d.db | doc_url(d.objType, d.schema or "", d.name) }}) | {{ d.relation }} |
+{% endfor -%}
+{% else -%}
+| — | — | — | — | — |
+{% endif %}
+
+## **Ошибки генерации**
+{% if generation_errors and generation_errors|length > 0 -%}
+{% for e in generation_errors -%}
+- **{{ e.stage }}**
+<pre><code>{{ e.message }}</code></pre>
+{% endfor -%}
+{% else -%}
+—
+{% endif -%}

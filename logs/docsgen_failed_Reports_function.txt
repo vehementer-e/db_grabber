@@ -1,0 +1,78 @@
+2026-02-09 18:25:02
+type=function
+db=Reports
+object=collection.tvf_GetDocumentTypeForRecognition
+cmd=docsgen build --db Reports function collection.tvf_GetDocumentTypeForRecognition
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 39, in generate_json
+    with get_connection(db) as conn:
+         ~~~~~~~~~~~~~~^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\db.py", line 21, in get_connection
+    return pyodbc.connect(_conn_str(database), timeout=10)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response (258)')
+--------------------------------------------------------------------------------
+2026-02-09 18:25:17
+type=function
+db=Reports
+object=dbo.customer_fio
+cmd=docsgen build --db Reports function dbo.customer_fio
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 39, in generate_json
+    with get_connection(db) as conn:
+         ~~~~~~~~~~~~~~^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\db.py", line 21, in get_connection
+    return pyodbc.connect(_conn_str(database), timeout=10)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response (258)')
+--------------------------------------------------------------------------------
+2026-02-09 18:25:27
+type=function
+db=Reports
+object=dbo.dt_st_month
+cmd=docsgen build --db Reports function dbo.dt_st_month
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 39, in generate_json
+    with get_connection(db) as conn:
+         ~~~~~~~~~~~~~~^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\db.py", line 21, in get_connection
+    return pyodbc.connect(_conn_str(database), timeout=10)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response (258)')
+--------------------------------------------------------------------------------

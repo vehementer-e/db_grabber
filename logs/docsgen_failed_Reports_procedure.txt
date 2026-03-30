@@ -1,0 +1,2624 @@
+2026-02-09 18:29:47
+type=procedure
+db=Reports
+object=collection.create_review_dm_tables_удалить_2026_06_01
+cmd=docsgen build --db Reports procedure collection.create_review_dm_tables_удалить_2026_06_01
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[collection].[create_review_dm_tables_�������_2026_06_01]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:30:25
+type=procedure
+db=Reports
+object=collection.report_client_portrait
+cmd=docsgen build --db Reports procedure collection.report_client_portrait
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Age'. (207) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:31:29
+type=procedure
+db=Reports
+object=dbo.checkRequestStateDuration
+cmd=docsgen build --db Reports procedure dbo.checkRequestStateDuration
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C3-VSR-SQL02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:32:29
+type=procedure
+db=Reports
+object=dbo.Create_dm_ConstructorEnforcementOrders
+cmd=docsgen build --db Reports procedure dbo.Create_dm_ConstructorEnforcementOrders
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ReceiptCheckDate'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ReceiptClaimAmount'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AmountRequirementsPledge'. (207)")
+--------------------------------------------------------------------------------
+2026-02-09 18:32:34
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_First_By_Parameters_Sort
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_First_By_Parameters_Sort
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'dwh-ex' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:32:34
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_Status
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_Status
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'DWH-EX' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:32:59
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_Status_Ext
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_Status_Ext
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'DWH-EX' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:33:00
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_Status_Ext_NEW_BP
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_Status_Ext_NEW_BP
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'DWH-EX' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:34:00
+type=procedure
+db=Reports
+object=dbo.Create_dm_FillingTypeChangesInRequests_новая_версия
+cmd=docsgen build --db Reports procedure dbo.Create_dm_FillingTypeChangesInRequests_новая_версия
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Create_dm_FillingTypeChangesInRequests_�����_������]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:34:18
+type=procedure
+db=Reports
+object=dbo.create_dm_report_woopra_pay_date
+cmd=docsgen build --db Reports procedure dbo.create_dm_report_woopra_pay_date
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_dm_report_woopra_pay_date]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:34:19
+type=procedure
+db=Reports
+object=dbo.create_dm_report_woopra_promise_date
+cmd=docsgen build --db Reports procedure dbo.create_dm_report_woopra_promise_date
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_dm_report_woopra_promise_date]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:34:33
+type=procedure
+db=Reports
+object=dbo.create_say_deals_all_for_jp
+cmd=docsgen build --db Reports procedure dbo.create_say_deals_all_for_jp
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_say_deals_all_for_jp]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:34:33
+type=procedure
+db=Reports
+object=dbo.create_say_deals_all_for_jp_for_vintag
+cmd=docsgen build --db Reports procedure dbo.create_say_deals_all_for_jp_for_vintag
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_say_deals_all_for_jp_for_vintag]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:35:09
+type=procedure
+db=Reports
+object=dbo.CreateDm_ReportKK_не_использовать
+cmd=docsgen build --db Reports procedure dbo.CreateDm_ReportKK_не_использовать
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[CreateDm_ReportKK_��_������������]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:35:11
+type=procedure
+db=Reports
+object=dbo.DatabaseBackup
+cmd=docsgen build --db Reports procedure dbo.DatabaseBackup
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[DatabaseBackup]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:35:24
+type=procedure
+db=Reports
+object=dbo.DatabaseIntegrityCheck
+cmd=docsgen build --db Reports procedure dbo.DatabaseIntegrityCheck
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[DatabaseIntegrityCheck]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:18
+type=procedure
+db=Reports
+object=dbo.IndexOptimize
+cmd=docsgen build --db Reports procedure dbo.IndexOptimize
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[IndexOptimize]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:20
+type=procedure
+db=Reports
+object=dbo.MainData2
+cmd=docsgen build --db Reports procedure dbo.MainData2
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[MainData2]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:21
+type=procedure
+db=Reports
+object=dbo.MMonitoring_CRM_UMFO
+cmd=docsgen build --db Reports procedure dbo.MMonitoring_CRM_UMFO
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-VSR-SQL04' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:36:26
+type=procedure
+db=Reports
+object=dbo.monitoring_crm_references_with_zero_du
+cmd=docsgen build --db Reports procedure dbo.monitoring_crm_references_with_zero_du
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C3-VSR-SQL02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:36:26
+type=procedure
+db=Reports
+object=dbo.Monitoring_FilesLoader
+cmd=docsgen build --db Reports procedure dbo.Monitoring_FilesLoader
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Monitoring_FilesLoader]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:31
+type=procedure
+db=Reports
+object=dbo.report_AddProduct_Payment
+cmd=docsgen build --db Reports procedure dbo.report_AddProduct_Payment
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_AddProduct_Payment]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:31
+type=procedure
+db=Reports
+object=dbo.Report_birs_Report_Subscriptions
+cmd=docsgen build --db Reports procedure dbo.Report_birs_Report_Subscriptions
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-VSR-BIRS' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:36:32
+type=procedure
+db=Reports
+object=dbo.Report_CalcMailyan_mfo
+cmd=docsgen build --db Reports procedure dbo.Report_CalcMailyan_mfo
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C1-VSR-SQL05' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:36:32
+type=procedure
+db=Reports
+object=dbo.Report_CancelledRequestOn_VDK_VD
+cmd=docsgen build --db Reports procedure dbo.Report_CancelledRequestOn_VDK_VD
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_CancelledRequestOn_VDK_VD]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:41
+type=procedure
+db=Reports
+object=dbo.report_Collection_Assignment_ к_удалению
+cmd=docsgen build --db Reports procedure dbo.report_Collection_Assignment_ к_удалению
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_Collection_Assignment_ �_��������]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:53
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_v1_cmr_to_del
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_v1_cmr_to_del
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_v1_cmr_to_del]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:54
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_v2_0
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_v2_0
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_v2_0]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:55
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_v2_1
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_v2_1
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_v2_1]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:36:56
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_vExclusive
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_vExclusive
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_vExclusive]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:37:24
+type=procedure
+db=Reports
+object=dbo.report_RequestsPostponed_CD_VDK_VD_body
+cmd=docsgen build --db Reports procedure dbo.report_RequestsPostponed_CD_VDK_VD_body
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_RequestsPostponed_CD_VDK_VD_body]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:37:24
+type=procedure
+db=Reports
+object=dbo.report_RequestsPostponed_ControlData_body
+cmd=docsgen build --db Reports procedure dbo.report_RequestsPostponed_ControlData_body
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_RequestsPostponed_ControlData_body]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:37:53
+type=procedure
+db=Reports
+object=dbo.report_SummaryCheckListFedorTLS
+cmd=docsgen build --db Reports procedure dbo.report_SummaryCheckListFedorTLS
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'PRODSQL02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:37:53
+type=procedure
+db=Reports
+object=dbo.Report_SupportedDevice_Smart
+cmd=docsgen build --db Reports procedure dbo.Report_SupportedDevice_Smart
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-LIS-AG01\\MDS' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:38:12
+type=procedure
+db=Reports
+object=dbo.reportCollection_Employee_Details_v1_удалить_2026_06_01
+cmd=docsgen build --db Reports procedure dbo.reportCollection_Employee_Details_v1_удалить_2026_06_01
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C1-VSR-SQL06' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202)")
+--------------------------------------------------------------------------------
+2026-02-09 18:38:12
+type=procedure
+db=Reports
+object=dbo.reportCollection_Employee_Soft_Middle_2_2023_11_30
+cmd=docsgen build --db Reports procedure dbo.reportCollection_Employee_Soft_Middle_2_2023_11_30
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C1-VSR-SQL06' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202)")
+--------------------------------------------------------------------------------
+2026-02-09 18:38:15
+type=procedure
+db=Reports
+object=dbo.ReportDashboard_Collection_EnforcementProceeding
+cmd=docsgen build --db Reports procedure dbo.ReportDashboard_Collection_EnforcementProceeding
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[ReportDashboard_Collection_EnforcementProceeding]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:38:32
+type=procedure
+db=Reports
+object=dbo.ReportDashboard_Collection_JudicialProceeding_part1
+cmd=docsgen build --db Reports procedure dbo.ReportDashboard_Collection_JudicialProceeding_part1
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'prodsql02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:38:33
+type=procedure
+db=Reports
+object=dbo.ReportDashboard_Collection_JudicialProceeding_part3
+cmd=docsgen build --db Reports procedure dbo.ReportDashboard_Collection_JudicialProceeding_part3
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'prodsql02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:38:58
+type=procedure
+db=Reports
+object=dbo.ReportDashboardJira_Efficiency_OT_Staff
+cmd=docsgen build --db Reports procedure dbo.ReportDashboardJira_Efficiency_OT_Staff
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'dwh-ex' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:39:22
+type=procedure
+db=Reports
+object=dbo.reportDifference_GUID_FIO_BirthD_CMR_Space
+cmd=docsgen build --db Reports procedure dbo.reportDifference_GUID_FIO_BirthD_CMR_Space
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'c1-vsr-sql04' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:39:22
+type=procedure
+db=Reports
+object=dbo.reportDifferenceOfAmounts_MFO_CMR
+cmd=docsgen build --db Reports procedure dbo.reportDifferenceOfAmounts_MFO_CMR
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[reportDifferenceOfAmounts_MFO_CMR]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:39:41
+type=procedure
+db=Reports
+object=dbo.ReportsAndPermissions
+cmd=docsgen build --db Reports procedure dbo.ReportsAndPermissions
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-VSR-BIRS' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:39:56
+type=procedure
+db=Reports
+object=finAnalytics.CB_CHECK2024
+cmd=docsgen build --db Reports procedure finAnalytics.CB_CHECK2024
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[finAnalytics].[CB_CHECK2024]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:39:58
+type=procedure
+db=Reports
+object=finAnalytics.CB_CHECK2024_c
+cmd=docsgen build --db Reports procedure finAnalytics.CB_CHECK2024_c
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[finAnalytics].[CB_CHECK2024_c]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:42:34
+type=procedure
+db=Reports
+object=Risk.collection_dailyplans_update
+cmd=docsgen build --db Reports procedure Risk.collection_dailyplans_update
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[Risk].[collection_dailyplans_update]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:43:45
+type=procedure
+db=Reports
+object=service.fill_dm_inbound_calls_report_удалить_2026_03_02
+cmd=docsgen build --db Reports procedure service.fill_dm_inbound_calls_report_удалить_2026_03_02
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[service].[fill_dm_inbound_calls_report_�������_2026_03_02]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:43:47
+type=procedure
+db=Reports
+object=service.fill_report_outboundCalls_agg_удалить_2026_03_01
+cmd=docsgen build --db Reports procedure service.fill_report_outboundCalls_agg_удалить_2026_03_01
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[service].[fill_report_outboundCalls_agg_�������_2026_03_01]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:47:10
+type=procedure
+db=Reports
+object=collection.create_review_dm_tables_удалить_2026_06_01
+cmd=docsgen build --db Reports procedure collection.create_review_dm_tables_удалить_2026_06_01
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[collection].[create_review_dm_tables_�������_2026_06_01]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:47:43
+type=procedure
+db=Reports
+object=collection.report_client_portrait
+cmd=docsgen build --db Reports procedure collection.report_client_portrait
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Age'. (207) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:48:52
+type=procedure
+db=Reports
+object=dbo.checkRequestStateDuration
+cmd=docsgen build --db Reports procedure dbo.checkRequestStateDuration
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C3-VSR-SQL02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:49:04
+type=procedure
+db=Reports
+object=dbo.Create_dm_ConstructorEnforcementOrders
+cmd=docsgen build --db Reports procedure dbo.Create_dm_ConstructorEnforcementOrders
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ReceiptCheckDate'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ReceiptClaimAmount'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AmountRequirementsPledge'. (207)")
+--------------------------------------------------------------------------------
+2026-02-09 18:49:16
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_First_By_Parameters_Sort
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_First_By_Parameters_Sort
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'dwh-ex' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:49:16
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_Status
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_Status
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'DWH-EX' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:49:17
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_Status_Ext
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_Status_Ext
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'DWH-EX' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:49:17
+type=procedure
+db=Reports
+object=dbo.Create_dm_DashboardJira_Status_Ext_NEW_BP
+cmd=docsgen build --db Reports procedure dbo.Create_dm_DashboardJira_Status_Ext_NEW_BP
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'DWH-EX' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:49:30
+type=procedure
+db=Reports
+object=dbo.Create_dm_FillingTypeChangesInRequests_новая_версия
+cmd=docsgen build --db Reports procedure dbo.Create_dm_FillingTypeChangesInRequests_новая_версия
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Create_dm_FillingTypeChangesInRequests_�����_������]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:49:46
+type=procedure
+db=Reports
+object=dbo.create_dm_report_woopra_pay_date
+cmd=docsgen build --db Reports procedure dbo.create_dm_report_woopra_pay_date
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_dm_report_woopra_pay_date]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:49:47
+type=procedure
+db=Reports
+object=dbo.create_dm_report_woopra_promise_date
+cmd=docsgen build --db Reports procedure dbo.create_dm_report_woopra_promise_date
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_dm_report_woopra_promise_date]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:11
+type=procedure
+db=Reports
+object=dbo.create_say_deals_all_for_jp
+cmd=docsgen build --db Reports procedure dbo.create_say_deals_all_for_jp
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_say_deals_all_for_jp]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:12
+type=procedure
+db=Reports
+object=dbo.create_say_deals_all_for_jp_for_vintag
+cmd=docsgen build --db Reports procedure dbo.create_say_deals_all_for_jp_for_vintag
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[create_say_deals_all_for_jp_for_vintag]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:15
+type=procedure
+db=Reports
+object=dbo.CreateDm_ReportKK_не_использовать
+cmd=docsgen build --db Reports procedure dbo.CreateDm_ReportKK_не_использовать
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[CreateDm_ReportKK_��_������������]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:16
+type=procedure
+db=Reports
+object=dbo.DatabaseBackup
+cmd=docsgen build --db Reports procedure dbo.DatabaseBackup
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[DatabaseBackup]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:17
+type=procedure
+db=Reports
+object=dbo.DatabaseIntegrityCheck
+cmd=docsgen build --db Reports procedure dbo.DatabaseIntegrityCheck
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[DatabaseIntegrityCheck]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:32
+type=procedure
+db=Reports
+object=dbo.IndexOptimize
+cmd=docsgen build --db Reports procedure dbo.IndexOptimize
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[IndexOptimize]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:33
+type=procedure
+db=Reports
+object=dbo.MainData2
+cmd=docsgen build --db Reports procedure dbo.MainData2
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[MainData2]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:50:34
+type=procedure
+db=Reports
+object=dbo.MMonitoring_CRM_UMFO
+cmd=docsgen build --db Reports procedure dbo.MMonitoring_CRM_UMFO
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-VSR-SQL04' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:50:47
+type=procedure
+db=Reports
+object=dbo.monitoring_crm_references_with_zero_du
+cmd=docsgen build --db Reports procedure dbo.monitoring_crm_references_with_zero_du
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C3-VSR-SQL02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:50:48
+type=procedure
+db=Reports
+object=dbo.Monitoring_FilesLoader
+cmd=docsgen build --db Reports procedure dbo.Monitoring_FilesLoader
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Monitoring_FilesLoader]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:18
+type=procedure
+db=Reports
+object=dbo.report_AddProduct_Payment
+cmd=docsgen build --db Reports procedure dbo.report_AddProduct_Payment
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_AddProduct_Payment]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:19
+type=procedure
+db=Reports
+object=dbo.Report_birs_Report_Subscriptions
+cmd=docsgen build --db Reports procedure dbo.Report_birs_Report_Subscriptions
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-VSR-BIRS' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:51:19
+type=procedure
+db=Reports
+object=dbo.Report_CalcMailyan_mfo
+cmd=docsgen build --db Reports procedure dbo.Report_CalcMailyan_mfo
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C1-VSR-SQL05' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:51:20
+type=procedure
+db=Reports
+object=dbo.Report_CancelledRequestOn_VDK_VD
+cmd=docsgen build --db Reports procedure dbo.Report_CancelledRequestOn_VDK_VD
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_CancelledRequestOn_VDK_VD]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:32
+type=procedure
+db=Reports
+object=dbo.report_Collection_Assignment_ к_удалению
+cmd=docsgen build --db Reports procedure dbo.report_Collection_Assignment_ к_удалению
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_Collection_Assignment_ �_��������]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:46
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_v1_cmr_to_del
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_v1_cmr_to_del
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_v1_cmr_to_del]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:46
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_v2_0
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_v2_0
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_v2_0]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:47
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_v2_1
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_v2_1
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_v2_1]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:51:47
+type=procedure
+db=Reports
+object=dbo.Report_Create_Agr_IntRate_vExclusive
+cmd=docsgen build --db Reports procedure dbo.Report_Create_Agr_IntRate_vExclusive
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[Report_Create_Agr_IntRate_vExclusive]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:52:08
+type=procedure
+db=Reports
+object=dbo.report_RequestsPostponed_CD_VDK_VD_body
+cmd=docsgen build --db Reports procedure dbo.report_RequestsPostponed_CD_VDK_VD_body
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_RequestsPostponed_CD_VDK_VD_body]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:52:08
+type=procedure
+db=Reports
+object=dbo.report_RequestsPostponed_ControlData_body
+cmd=docsgen build --db Reports procedure dbo.report_RequestsPostponed_ControlData_body
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[report_RequestsPostponed_ControlData_body]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:52:11
+type=procedure
+db=Reports
+object=dbo.report_SummaryCheckListFedorTLS
+cmd=docsgen build --db Reports procedure dbo.report_SummaryCheckListFedorTLS
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'PRODSQL02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:52:11
+type=procedure
+db=Reports
+object=dbo.Report_SupportedDevice_Smart
+cmd=docsgen build --db Reports procedure dbo.Report_SupportedDevice_Smart
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-LIS-AG01\\MDS' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:52:27
+type=procedure
+db=Reports
+object=dbo.reportCollection_Employee_Details_v1_удалить_2026_06_01
+cmd=docsgen build --db Reports procedure dbo.reportCollection_Employee_Details_v1_удалить_2026_06_01
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C1-VSR-SQL06' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202)")
+--------------------------------------------------------------------------------
+2026-02-09 18:52:28
+type=procedure
+db=Reports
+object=dbo.reportCollection_Employee_Soft_Middle_2_2023_11_30
+cmd=docsgen build --db Reports procedure dbo.reportCollection_Employee_Soft_Middle_2_2023_11_30
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IdCollectingStage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C1-VSR-SQL06' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202)")
+--------------------------------------------------------------------------------
+2026-02-09 18:52:30
+type=procedure
+db=Reports
+object=dbo.ReportDashboard_Collection_EnforcementProceeding
+cmd=docsgen build --db Reports procedure dbo.ReportDashboard_Collection_EnforcementProceeding
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[ReportDashboard_Collection_EnforcementProceeding]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:52:43
+type=procedure
+db=Reports
+object=dbo.ReportDashboard_Collection_JudicialProceeding_part1
+cmd=docsgen build --db Reports procedure dbo.ReportDashboard_Collection_JudicialProceeding_part1
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'prodsql02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:52:44
+type=procedure
+db=Reports
+object=dbo.ReportDashboard_Collection_JudicialProceeding_part3
+cmd=docsgen build --db Reports procedure dbo.ReportDashboard_Collection_JudicialProceeding_part3
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'prodsql02' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:52:59
+type=procedure
+db=Reports
+object=dbo.ReportDashboardJira_Efficiency_OT_Staff
+cmd=docsgen build --db Reports procedure dbo.ReportDashboardJira_Efficiency_OT_Staff
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'dwh-ex' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:53:01
+type=procedure
+db=Reports
+object=dbo.reportDifference_GUID_FIO_BirthD_CMR_Space
+cmd=docsgen build --db Reports procedure dbo.reportDifference_GUID_FIO_BirthD_CMR_Space
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'c1-vsr-sql04' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:53:02
+type=procedure
+db=Reports
+object=dbo.reportDifferenceOfAmounts_MFO_CMR
+cmd=docsgen build --db Reports procedure dbo.reportDifferenceOfAmounts_MFO_CMR
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[dbo].[reportDifferenceOfAmounts_MFO_CMR]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:53:07
+type=procedure
+db=Reports
+object=dbo.ReportsAndPermissions
+cmd=docsgen build --db Reports procedure dbo.ReportsAndPermissions
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 195, in get_procedure_metadata
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+    ...<10 lines>...
+        (full_name,),
+        ^^^^^^^^^^^^^
+    )
+    ^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Could not find server 'C2-VSR-BIRS' in sys.servers. Verify that the correct server name was specified. If necessary, execute the stored procedure sp_addlinkedserver to add the server to sys.servers. (7202) (SQLExecDirectW)")
+--------------------------------------------------------------------------------
+2026-02-09 18:53:12
+type=procedure
+db=Reports
+object=finAnalytics.CB_CHECK2024
+cmd=docsgen build --db Reports procedure finAnalytics.CB_CHECK2024
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[finAnalytics].[CB_CHECK2024]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:53:13
+type=procedure
+db=Reports
+object=finAnalytics.CB_CHECK2024_c
+cmd=docsgen build --db Reports procedure finAnalytics.CB_CHECK2024_c
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[finAnalytics].[CB_CHECK2024_c]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:54:32
+type=procedure
+db=Reports
+object=Risk.collection_dailyplans_update
+cmd=docsgen build --db Reports procedure Risk.collection_dailyplans_update
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[Risk].[collection_dailyplans_update]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:54:48
+type=procedure
+db=Reports
+object=service.fill_dm_inbound_calls_report_удалить_2026_03_02
+cmd=docsgen build --db Reports procedure service.fill_dm_inbound_calls_report_удалить_2026_03_02
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[service].[fill_dm_inbound_calls_report_�������_2026_03_02]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------
+2026-02-09 18:54:50
+type=procedure
+db=Reports
+object=service.fill_report_outboundCalls_agg_удалить_2026_03_01
+cmd=docsgen build --db Reports procedure service.fill_report_outboundCalls_agg_удалить_2026_03_01
+returncode=1
+stderr:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\.venv\scripts\docsgen.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 125, in main
+    args.func(args)
+    ~~~~~~~~~^^^^^^
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 86, in cmd_build
+    doc = generate_json(db, args.type, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\cli.py", line 41, in generate_json
+    return get_procedure_metadata(conn, schema, name)
+  File "C:\Users\A.Shubkin\Desktop\md_generator\md_generator\src\docsgen\jgen\procedure.py", line 209, in get_procedure_metadata
+    dme_rows = cur.fetchall()
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The dependencies reported for entity "[service].[fill_report_outboundCalls_agg_�������_2026_03_01]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist. (2020) (SQLFetch)')
+--------------------------------------------------------------------------------

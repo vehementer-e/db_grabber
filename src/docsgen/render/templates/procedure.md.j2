@@ -1,0 +1,65 @@
+{# title обычно "Schema.Name" #}
+{% set parts = title.split('.') %}
+{% set sch = parts[0] %}
+{% set nm = parts[1] if parts|length > 1 else title %}
+
+# **[{{ title }}]({{ (dependencies.db or "") | doc_url("procedures", sch, nm) }})**
+
+## **Описание**
+{{ description or "" }}
+
+## **Параметры**
+| Имя | Тип | OUTPUT |
+|---|---|---|
+{% if parameters and parameters|length > 0 -%}
+{% for p in parameters -%}
+| `{{ p.name }}` | {{ p.type }} | {{ "yes" if p.is_output else "no" }} |
+{% endfor -%}
+{% else -%}
+| — | — | — |
+{% endif %}
+
+## **Результирующий датасет**
+| Поле | Тип | Nullable | Описание | Возможные значения |
+|---|---|---|---|---|
+{% if result_dataset -%}
+{% for c in result_dataset -%}
+| `{{ c.name }}` | {{ c.type }} | {{ "yes" if c.is_nullable else "no" }} |  |  |
+{% endfor -%}
+{% else -%}
+{# пустая табличка если null #}
+{% endif %}
+
+## **Зависимости (от которых зависит)**
+| Тип | DB | Schema | Name | Relation |
+|---|---|---|---|---|
+{% set deps = dependencies.depends_on if dependencies and dependencies.depends_on else [] -%}
+{% if deps|length > 0 -%}
+{% for d in deps -%}
+| {{ d.objType }} | {{ d.db }} | {{ d.schema or "" }} | [{{ d.name }}]({{ d.db | doc_url(d.objType, d.schema or "", d.name) }}) | {{ d.relation }} |
+{% endfor -%}
+{% else -%}
+| — | — | — | — | — |
+{% endif %}
+
+## **Зависимости (которые зависят от)**
+| Тип | DB | Schema | Name | Relation |
+|---|---|---|---|---|
+{% set rb = dependencies.required_by if dependencies and dependencies.required_by else [] -%}
+{% if rb|length > 0 -%}
+{% for d in rb -%}
+| {{ d.objType }} | {{ d.db }} | {{ d.schema or "" }} | [{{ d.name }}]({{ d.db | doc_url(d.objType, d.schema or "", d.name) }}) | {{ d.relation }} |
+{% endfor -%}
+{% else -%}
+| — | — | — | — | — |
+{% endif %}
+
+## **Ошибки генерации**
+{% if generation_errors and generation_errors|length > 0 -%}
+{% for e in generation_errors -%}
+- **{{ e.stage }}**
+<pre><code>{{ e.message }}</code></pre>
+{% endfor -%}
+{% else -%}
+—
+{% endif -%}
