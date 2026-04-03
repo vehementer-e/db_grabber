@@ -117,6 +117,9 @@ BEGIN
 
     ------------------------------------------------------------
     -- Создание <table>_new (если еще не создана)
+    -- Важно: не используем SELECT TOP(0) INTO, т.к. он не переносит
+    -- default-constraints, computed columns и collations, а также
+    -- не задает TEXTIMAGE_ON для LOB. Здесь схема собирается явно.
     ------------------------------------------------------------
     IF OBJECT_ID(QUOTENAME(@schema) + N'.' + QUOTENAME(@new_table), 'U') IS NULL
     BEGIN
