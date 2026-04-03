@@ -1,5 +1,8 @@
 
   -- exec velab.CreatePlanB
+-- Usage: запуск процедуры с параметрами
+-- EXEC [velab].[CreatePlanB] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
   CREATE   procedure [velab].[CreatePlanB]
   as
 

@@ -1,5 +1,8 @@
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[fill_mmsChannelGroup] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE procedure [_LF].[fill_mmsChannelGroup]
 	@mmsChannelGroups [_lf].[utt_mmsChannelGroup] readonly 
 	,@debug bit = 0

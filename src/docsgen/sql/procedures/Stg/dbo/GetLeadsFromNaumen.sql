@@ -1,5 +1,8 @@
 
 ---exec GetLeadsFromNaumen
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[GetLeadsFromNaumen] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [dbo].[GetLeadsFromNaumen]
 as
 begin

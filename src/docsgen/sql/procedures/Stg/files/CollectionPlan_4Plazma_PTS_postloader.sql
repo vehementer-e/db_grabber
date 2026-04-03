@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[CollectionPlan_4Plazma_PTS_postloader] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC [files].[CollectionPlan_4Plazma_PTS_postloader]
 as
 BEGIN

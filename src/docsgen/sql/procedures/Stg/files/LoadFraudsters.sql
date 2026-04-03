@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.LoadFraudsters @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE    procedure files.LoadFraudsters
 as
 begin

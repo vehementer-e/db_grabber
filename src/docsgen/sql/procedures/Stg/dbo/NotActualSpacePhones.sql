@@ -1,5 +1,8 @@
 -- exec NotActualSpacePhones
 -- select * from dm_NotActualSpacePhones  where phonesOfClient_phone='9196914139'
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[NotActualSpacePhones] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [dbo].[NotActualSpacePhones]
 as
 --EXECUTE AS LOGIN = 'sa';

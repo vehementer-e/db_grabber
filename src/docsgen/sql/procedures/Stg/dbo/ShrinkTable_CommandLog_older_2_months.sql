@@ -3,6 +3,9 @@
 -- Create date: 24.07.2022
 -- Description: DWH-1679 Регулярная отчистка лог таблицы
 -- ============================================= 
+-- Usage: запуск процедуры с параметрами
+-- EXEC dbo.ShrinkTable_CommandLog_older_2_months @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC dbo.ShrinkTable_CommandLog_older_2_months
 	@RowsCountToDelete int = 100000 -- количество удаляемых строк
 AS

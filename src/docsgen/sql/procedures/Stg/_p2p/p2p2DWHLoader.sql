@@ -5,6 +5,9 @@
 -- exec [_p2p].[p2p2DWHLoader]
 -- =============================================
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_p2p].[p2p2DWHLoader] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [_p2p].[p2p2DWHLoader]
 AS
 BEGIN

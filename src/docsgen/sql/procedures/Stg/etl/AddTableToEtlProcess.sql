@@ -37,6 +37,9 @@ exec[etl].[AddTableToEtlProcess]
 */
 
 -- ============================================= 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[AddTableToEtlProcess] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC [etl].[AddTableToEtlProcess]
 	@Mode varchar(127), -- 'full', 'increment'
 	@EtlProcessName varchar(127),

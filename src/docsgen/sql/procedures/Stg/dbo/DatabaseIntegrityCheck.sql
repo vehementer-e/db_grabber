@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[DatabaseIntegrityCheck] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [dbo].[DatabaseIntegrityCheck]
 
 @Databases nvarchar(max) = NULL,

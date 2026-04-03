@@ -1,5 +1,8 @@
 
 --exec _lcrm.LeadStatusesIntoLoginom
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.LeadStatusesIntoLoginom @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC _LCRM.LeadStatusesIntoLoginom
 as
 begin

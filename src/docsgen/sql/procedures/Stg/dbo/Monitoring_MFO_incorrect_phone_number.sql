@@ -2,6 +2,9 @@
 -- Created: 09.03.2022. А.Никитин
 -- Description:	DWH-1602 Мониторинг заявок. МФО с не корректным телефонным номером
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[Monitoring_MFO_incorrect_phone_number] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [dbo].[Monitoring_MFO_incorrect_phone_number]
 AS
 BEGIN

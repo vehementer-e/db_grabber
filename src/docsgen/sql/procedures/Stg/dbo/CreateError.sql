@@ -3,6 +3,9 @@
 -- Create date: 1.03.2022  
 -- Description: Формирование сообщений об ошибке
 -- =============================================  
+-- Usage: запуск процедуры с параметрами
+-- EXEC dbo.CreateError @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE dbo.CreateError
 	@sError nvarchar(max) = NULL
 AS  

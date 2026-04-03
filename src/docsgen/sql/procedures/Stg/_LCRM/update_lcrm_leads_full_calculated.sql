@@ -3,6 +3,9 @@
 -- Create date: 15.08.2023
 -- Description: DWH-2161 Загрузка отсутствующих записей в lcrm_leads_full_calculated
 -- ============================================= 
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.update_lcrm_leads_full_calculated @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC _LCRM.update_lcrm_leads_full_calculated
 	@isDebug int = 0,
 	@ProcessGUID varchar(36) = NULL, -- guid процесса

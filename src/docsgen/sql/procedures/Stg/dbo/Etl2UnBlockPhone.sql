@@ -1,5 +1,8 @@
 --Создание списка телефонов которые нельзя блокировать для черного списка
 /*BP-831*/	
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[Etl2UnBlockPhone] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE procedure [dbo].[Etl2UnBlockPhone]
 as
 begin

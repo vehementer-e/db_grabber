@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC _loginom.[CRM_black_phones2Loginom] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 create   procedure _loginom.[CRM_black_phones2Loginom]
 as
 begin

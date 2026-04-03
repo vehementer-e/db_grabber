@@ -14,6 +14,9 @@ select *
 			
 */
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[reTryRunProcessСontractMove2Archive_envelope] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE     PROC [etl].[reTryRunProcessСontractMove2Archive_envelope]
 	@processGUID nvarchar(36) = null
 	,@whaitCompleted bit = 1

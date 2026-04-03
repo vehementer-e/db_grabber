@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC _loginom.ClearTable_Original_response @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC _loginom.ClearTable_Original_response
 	--@batchSize int = 1000000
 AS

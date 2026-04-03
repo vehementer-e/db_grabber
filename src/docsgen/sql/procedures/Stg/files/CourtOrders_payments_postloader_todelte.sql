@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.CourtOrders_payments_postloader @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 create     procedure files.CourtOrders_payments_postloader
 as begin
 set nocount on

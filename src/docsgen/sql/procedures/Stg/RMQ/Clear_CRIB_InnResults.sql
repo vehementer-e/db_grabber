@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [RMQ].[Clear_CRIB_InnResults] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [RMQ].[Clear_CRIB_InnResults]
 	@dd int =10
 as

@@ -1,5 +1,8 @@
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.LCRMLeads_logging @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC _LCRM.LCRMLeads_logging
 @action int = 0,
 @message nvarchar(200) ='info',

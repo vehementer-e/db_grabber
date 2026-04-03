@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LCRM].[load_lcrm_full_from_RMQ_uat] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [_LCRM].[load_lcrm_full_from_RMQ_uat]
 	@mode int = 0
 	,@debug bit = 1

@@ -6,6 +6,9 @@
 -- select * from _fedor.core_LeadCommunication
 
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC _fedor.load_core_LeadCommunication @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE procedure _fedor.load_core_LeadCommunication
 	@reloadDay int = 10
 as

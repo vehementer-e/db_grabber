@@ -30,6 +30,9 @@ select * from etl.ReloadData4Contract
 --where ProcessGUID ='D86BA415-D1DE-4F09-A306-C4FB94D4C09E'
 order by createdAt desc
 */
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[runProcessContractUpdate] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC [etl].[runProcessContractUpdate]
 (
 	@contractGuid nvarchar(36) --guid договора

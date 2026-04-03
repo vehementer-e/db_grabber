@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[MoveTableWithLobs2ToNewFG] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [dbo].[MoveTableWithLobs2ToNewFG]
 (
     @table_name SYSNAME,              -- schema.table

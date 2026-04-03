@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[report_IncomingFlows] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROCEDURE [dbo].[report_IncomingFlows]
     @StartDate DATE,
     @EndDate   DATE

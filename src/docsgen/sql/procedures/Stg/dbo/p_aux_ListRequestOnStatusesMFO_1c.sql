@@ -4,6 +4,9 @@
 -- Create date: 2019-05-07
 -- Description:	 
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[p_aux_ListRequestOnStatusesMFO_1c] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [dbo].[p_aux_ListRequestOnStatusesMFO_1c]
 AS
 BEGIN  --auxtab_ListRequestOnStatusesMFO_1c

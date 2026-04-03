@@ -1,6 +1,9 @@
 /*
 	exec _1cCRM.Deduplicate_Документ_ЗаявкаНаЗаймПодПТС_upd
 */
+-- Usage: запуск процедуры с параметрами
+-- EXEC _1cCRM.Deduplicate_Документ_ЗаявкаНаЗаймПодПТС_upd @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC _1cCRM.Deduplicate_Документ_ЗаявкаНаЗаймПодПТС_upd
 as	
 BEGIN

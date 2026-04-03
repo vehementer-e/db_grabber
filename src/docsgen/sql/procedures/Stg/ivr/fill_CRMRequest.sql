@@ -6,6 +6,9 @@
 --	select * from ivr.IVR_Data
 	--[ivr].[fill_CRMRequest] @reLoadAll = 1
 		
+-- Usage: запуск процедуры с параметрами
+-- EXEC [ivr].[fill_CRMRequest] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC [ivr].[fill_CRMRequest]
 	@isDebug bit  = 0,
 	@reLoadAll bit = 0 

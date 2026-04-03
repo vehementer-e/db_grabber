@@ -2,6 +2,9 @@
 --exec [_1cCRM].[RMQ_CRM_Loader]
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_1cCRM].RMQ_CRM_Monitoring_Loader @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [_1cCRM].RMQ_CRM_Monitoring_Loader
 as
 begin 

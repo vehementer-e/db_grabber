@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [RMQ].[Clear_CRIB_ModelVisit] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [RMQ].[Clear_CRIB_ModelVisit]
 	@dd int =10
 as

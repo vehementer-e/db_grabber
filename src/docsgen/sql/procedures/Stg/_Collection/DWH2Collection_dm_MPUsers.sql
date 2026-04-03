@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC _collection.DWH2Collection_dm_MPUsers @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 create procedure _collection.DWH2Collection_dm_MPUsers
 as
 begin

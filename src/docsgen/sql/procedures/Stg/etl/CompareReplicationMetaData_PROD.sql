@@ -13,6 +13,9 @@ exec etl.CompareReplicationMetaData_PROD
 	,@isSendMail		= 	
 	,@isDebug			= 
 */
+-- Usage: запуск процедуры с параметрами
+-- EXEC etl.CompareReplicationMetaData_PROD @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC etl.CompareReplicationMetaData_PROD
 	@sourceDBMSType		nvarchar(255) = NULL,
 	@sourceDbName		nvarchar(255) = NULL,

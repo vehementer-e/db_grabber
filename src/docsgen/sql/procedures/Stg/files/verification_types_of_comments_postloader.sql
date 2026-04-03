@@ -1,6 +1,9 @@
 
  
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[verification_types_of_comments_postloader] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE procedure [files].[verification_types_of_comments_postloader]
 
 as begin

@@ -4,6 +4,9 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[switch_Device_2_loginom_envelope] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROCEDURE [etl].[switch_Device_2_loginom_envelope]
 	@env nvarchar(100) = 'prod',
 	@process_guid uniqueidentifier = NULL

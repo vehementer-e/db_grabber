@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC etl.set_deactived_Need2LoadFiles @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 create   procedure etl.set_deactived_Need2LoadFiles
 as
 begin

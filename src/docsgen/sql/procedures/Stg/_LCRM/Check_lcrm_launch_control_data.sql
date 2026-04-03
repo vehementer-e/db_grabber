@@ -10,6 +10,9 @@ select max(c.UF_UPDATED_AT) from carmoney_light_crm_launch_control_new c
 max(id) в таблице DWH _LCRM.carmoney_light_crm_launch_control
 а потом в таблице-источнике находим max(UF_UPDATED_AT) для id > ( max(id) - 40000000)
 */
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.Check_lcrm_launch_control_data @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC _LCRM.Check_lcrm_launch_control_data
 	@isDebug int = 0
 as

@@ -5,6 +5,9 @@
 -- Description:	<Description,,>
 --exec [files].[cut_off_lidgen_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[cut_off_lidgen_postloader] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [files].[cut_off_lidgen_postloader]
 
 as

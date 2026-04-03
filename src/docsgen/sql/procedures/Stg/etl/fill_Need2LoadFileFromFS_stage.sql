@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[fill_Need2LoadFileFromFS_stage] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   procedure [etl].[fill_Need2LoadFileFromFS_stage]
 as
 begin try

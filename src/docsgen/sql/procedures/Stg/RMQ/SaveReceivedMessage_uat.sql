@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [RMQ].[SaveReceivedMessage_uat] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROC [RMQ].[SaveReceivedMessage_uat]
 	@FromHost nvarchar(255)
   , @FromHostVirtualHost nvarchar(100)

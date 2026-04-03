@@ -3,6 +3,9 @@
 -- Create date: 2023-10-20
 -- Description:	DWH-2285 Создать таблицу в которой будет хранится типа клиента
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC _loginom.fill_return_type @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC _loginom.fill_return_type
 as
 begin

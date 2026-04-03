@@ -3,6 +3,9 @@
 -- Create date: 2019-05-20
 -- Description:	Таблица Административная структура компании с учетом иерархии
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[OfficeStructureMFO_1C] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE PROCEDURE [dbo].[OfficeStructureMFO_1C]
 
 

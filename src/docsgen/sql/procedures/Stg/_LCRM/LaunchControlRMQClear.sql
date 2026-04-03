@@ -1,5 +1,8 @@
 --new 27.07.2020
 --exec [_LCRM].[LaunchControlRMQClear]
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LCRM].[LaunchControlRMQClear] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE  procedure [_LCRM].[LaunchControlRMQClear]
 as
 

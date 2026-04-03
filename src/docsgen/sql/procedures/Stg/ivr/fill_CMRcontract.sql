@@ -2,6 +2,9 @@
    @CRMClientGUID = 'C0E50673-A36F-4E07-AD52-18F5B5DCE82E'
    ,@isDebug =1 , @reLoadAll = 1
 */
+-- Usage: запуск процедуры с параметрами
+-- EXEC [ivr].[fill_CMRcontract] @param1 = <value>, @param2 = <value>;
+-- Список и типы параметров смотрите в объявлении процедуры ниже.
 CREATE   PROC [ivr].[fill_CMRcontract]
 	@isDebug bit= 0,
 	@reLoadAll bit = 0,
