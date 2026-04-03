@@ -1,0 +1,142 @@
+
+
+
+ -- [etl].[Send_DeactivatedMarketingProposal2RMQ_docredyPts] @env = 'prod', @CMRClientGUID = 'C6DCA609-08F9-11E8-A814-00155D941900'
+CREATE      procedure [etl].[Send_DeactivatedMarketingProposal2RMQ_docredyPts_delete_10_04_2026]
+	@env nvarchar(255) = 'uat',
+	@isDebug bit = 0
+	--@CMRClientGUID nvarchar(36) = null
+as
+begin
+	
+	declare @spName nvarchar(255) =  concat('etl', '.', OBJECT_NAME(@@PROCID))
+	,@rmqSenderUrl  nvarchar(255) = 'https://dwhex.carm.corp'
+	
+	declare @ServiceUrl varchar(1024) = concat_ws('/', @rmqSenderUrl, @env, 'RMQProducer/api/Send2Rmq')
+	
+	
+	 ,@httpMethod varchar(10) = 'POST',
+       @paramsValues varchar(1024) = '',    -- param1=value&param2=value
+	   @authHeader NVARCHAR(64) = '',
+	   @soapAction varchar(1024) = null,
+	   @contentType NVARCHAR(64) = 'application/json',
+	   @status  int = -1 ,
+	   @statusText varchar(1024)  = '',
+	   @errorSource varchar(255) = '' ,
+	   @errorDesc varchar(255) = '',
+	   @responseTextResult nvarchar(4000) = '',
+	   @resultDesc nvarchar(4000) = '',
+	   @GuidResultId nvarchar(36) = newID()
+	--if @env = 'uat'
+	declare @procParams etl.[utt_rmqProcParams]
+	insert into @procParams(Name, value)
+	select  Name, Value from (values
+	
+			('env', 'prod')
+			--,('CMRClientGUIDs', @CMRClientGUIDs)
+	)t( Name, Value)
+
+	declare @exchangeName nvarchar(255)  = 'dwh.marketProposal.1.1'
+	,@routingKey nvarchar(255) = 'dwh.deactivationMarketProposal.1'
+	,@procedureName  nvarchar(255) = 'dwh2.[etl].[GetDeactivatedMarketProposal_docredyPts_RMQ_JSON]'
+	
+	select @paramsValues = etl.GetJson4RMQProducer(
+		@exchangeName
+		,@routingKey 
+		,@procedureName
+		,@procParams
+	)
+	if @isDebug = 1
+	begin
+		select  @ServiceUrl, @paramsValues
+	end
+
+	
+	declare @text nvarchar(max)=N''
+	declare @error_description nvarchar(4000)=N''
+		set @text=Concat('Деактивация маркетинговые предложения.'
+		, ' Старт загрузки данных в RMQ для проекту докреды ПТС'
+		, ' env:', @env
+		, ' ', format(getdate(),'dd.MM.yyyy HH:mm:ss'))
+	EXEC [LogDb].dbo.SendToSlack_dwhNotification  @text
+	exec logdb.dbo.[LogAndSendMailToAdmin] 
+		'trying start [etl].[Send_DeactivatedMarketingProposal2RMQ_docredyPts]','Info',' started', ''
+	declare @responseResult nvarchar(4000)  
+	begin try
+		
+		exec LogDb.etl.[RequestHttpWebService]
+			@url = @ServiceUrl, 
+			@httpMethod = @httpMethod, 
+			@paramsValues = @paramsValues, 
+			@authHeader = @authHeader, 
+			@soapAction = @soapAction, 
+			@contentType =@contentType, 
+			@status			= @status out, 
+			@statusText		= @statusText out,
+			@errorSource	= @errorSource out, 
+			@errorDesc		= @errorDesc out, 
+			@responseResult = @responseTextResult out,
+			@IsResponseOutputResult = 1, 
+			@IsSaveResult2Table		= 1,
+			@outGuidResultId		= @GuidResultId out
+				
+			if @status not between 200 and 300
+			begin
+				declare @errorCode int = 51000+ @status
+				declare @responseError nvarchar(1024)=concat(':interrobang: '
+					,'Ошибка вызыва сервиса по отправке в RMQ.' 
+					,' statusCode ' , @status
+					,' statusText = ', @statusText
+					,ISNULL(' errorSource = ' + @errorSource, '')
+					,ISNULL(' errorDesc = ' + @errorDesc, '')
+					)
+				;throw @errorCode, @responseError, 16
+				
+			end
+			else
+			begin
+				declare @TotalSendPackages int
+				if  ISJSON(@responseTextResult) = 1
+				begin
+					set @TotalSendPackages =JSON_VALUE(@responseTextResult, '$.result.totalSendPackages')
+					
+				end
+				print @TotalSendPackages
+				declare @msg nvarchar(255)= Concat('Данные для деактивация маркетинговые пердложений по проекту докреды ПТС загружены в RMQ'
+					,isnull(' Отправлено: ' + cast(@TotalSendPackages as nvarchar(10)), '')
+					)
+				EXEC  [LogDb].dbo.SendToSlack_dwhNotification  @msg
+				exec logdb.dbo.[LogAndSendMailToAdmin] 'exec [etl].[Send_DeactivatedMarketingProposal2RMQ_docredyPts]','Info','Done',''
+			end
+			
+	end try
+	begin catch
+		if @@TRANCOUNT>0
+			ROLLBACK TRAN
+		
+		
+
+		set @error_description =concat('ErrorNumber: ',  cast(format(ERROR_NUMBER(),'0') as nvarchar(50))
+			,	char(10), char(13)
+			, ' ErrorSEVERITY: ', cast(format(ERROR_SEVERITY(),'0') as nvarchar(50))
+			, char(10), char(13)
+			, ' ErrorState: ', cast(format(ERROR_State(),'0') as nvarchar(50))
+			, char(10), char(13)
+			, ' ErrorProcedure: '+ isnull( ERROR_PROCEDURE() ,'')
+			,  char(10), char(13)
+			, ' Error_line: ',  cast(format(ERROR_LINE(),'0') as nvarchar(50))
+			, char(10), char(13), 
+			' ErrorMessage: '+  isnull(ERROR_MESSAGE(),'')
+			)
+      
+      
+		set @text=concat(':exclamation: Ошибка загрузки данных по проекту докреды ПТС в RMQ ', format(getdate(),'dd.MM.yyyy HH:mm:ss'))
+		EXEC  [LogDb].dbo.SendToSlack_dwhNotification  @text
+      
+		exec logdb.dbo.[LogAndSendMailToAdmin] 'catching error [etl].[Send_DeactivatedMarketingProposal2RMQ_docredyPts]','Error','Error',@error_description
+      
+		;throw 51000, @error_description, 1
+		
+	end catch
+end
+
