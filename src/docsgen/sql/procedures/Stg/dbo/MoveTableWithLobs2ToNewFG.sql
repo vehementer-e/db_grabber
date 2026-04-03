@@ -32,6 +32,7 @@ BEGIN
         @suffix CHAR(8),
         @old_renamed SYSNAME,
         @candidate SYSNAME,
+        @rename_objname NVARCHAR(520),
         @n INT = 0,
         @utc_date DATE = CONVERT(date, SYSUTCDATETIME());
 
@@ -282,7 +283,8 @@ BEGIN
     BEGIN TRAN;
     BEGIN TRY
         EXEC sys.sp_rename @objname = @table_name, @newname = @old_renamed, @objtype = 'OBJECT';
-        EXEC sys.sp_rename @objname = QUOTENAME(@schema) + N'.' + QUOTENAME(@new_table), @newname = @table, @objtype = 'OBJECT';
+        SET @rename_objname = QUOTENAME(@schema) + N'.' + QUOTENAME(@new_table);
+        EXEC sys.sp_rename @objname = @rename_objname, @newname = @table, @objtype = 'OBJECT';
         COMMIT TRAN;
     END TRY
     BEGIN CATCH
