@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC files.[installment @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC files.[installment выгрузка из вупры_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.[installment выгрузка из вупры_postloader] as begin 
  begin tran 
   truncate table files.[installment выгрузка из вупры] 

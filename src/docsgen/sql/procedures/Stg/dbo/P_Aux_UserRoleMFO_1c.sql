@@ -5,8 +5,8 @@
 -- Description:	Таблица Пользователь-Роль из МФО
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[P_Aux_UserRoleMFO_1c] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[P_Aux_UserRoleMFO_1c];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[P_Aux_UserRoleMFO_1c]
 	-- Add the parameters for the stored procedure here
 

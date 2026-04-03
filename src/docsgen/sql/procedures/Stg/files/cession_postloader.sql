@@ -1,7 +1,7 @@
 
 -- Usage: запуск процедуры с параметрами
--- EXEC files.cession_postloader @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC files.cession_postloader;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   procedure files.cession_postloader
 as
 begin

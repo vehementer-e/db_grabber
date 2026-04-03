@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC files.Test_new_postloader @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC files.Test_new_postloader;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.Test_new_postloader as begin 
  begin tran 
   truncate table files.test_new

@@ -8,8 +8,8 @@ select * from _autostat.Generation
 --truncate table _autostat.Model
 */
 -- Usage: запуск процедуры с параметрами
--- EXEC [_autostat].[EtlMarkaModel] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_autostat].[EtlMarkaModel] @jsonData = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [_autostat].[EtlMarkaModel]
 	@jsonData nvarchar(max)
 as

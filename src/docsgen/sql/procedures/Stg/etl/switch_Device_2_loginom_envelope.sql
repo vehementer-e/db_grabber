@@ -5,8 +5,10 @@
 -- Description:	<Description,,>
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [etl].[switch_Device_2_loginom_envelope] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [etl].[switch_Device_2_loginom_envelope]
+--      @env = 'prod',
+--      @process_guid = NULL;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROCEDURE [etl].[switch_Device_2_loginom_envelope]
 	@env nvarchar(100) = 'prod',
 	@process_guid uniqueidentifier = NULL

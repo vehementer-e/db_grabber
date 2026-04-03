@@ -1,6 +1,8 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC etl.set_Status_ReloadData4Contract @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC etl.set_Status_ReloadData4Contract
+--      @StatusCode = <value>,
+--      @StatusDesc = null;
+-- Параметры соответствуют объявлению процедуры ниже.
 create procedure etl.set_Status_ReloadData4Contract
 	@StatusCode nvarchar(255)
 	,@StatusDesc nvarchar(255) = null

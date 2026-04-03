@@ -2,8 +2,8 @@
 --exec files.LoadContactCenterPlans
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[Sales_AllPlans_postloader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[Sales_AllPlans_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [files].[Sales_AllPlans_postloader]
 as
 begin

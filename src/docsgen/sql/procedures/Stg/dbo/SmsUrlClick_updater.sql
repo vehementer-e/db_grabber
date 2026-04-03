@@ -1,8 +1,11 @@
 --select * from _collection.SmsWithShortUrl u left join dbo.SMSUrlClicks c on u.url_ending=c.url_ending order by 1 desc
 --  exec SmsUrlClick_updater 'jdnGa','Direct',4
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[SmsUrlClick_updater] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[SmsUrlClick_updater]
+--      @url_ending = <value>,
+--      @label = <value>,
+--      @clicks = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [dbo].[SmsUrlClick_updater]
  @url_ending  nvarchar(10)
 ,@label       nvarchar(50)

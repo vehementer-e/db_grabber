@@ -16,8 +16,16 @@ SELECT 'ReturnCode' = @ReturnCode, 'ReturnMessage' = @ReturnMessage
 -- Description:	DWH-1564 Загрузка Excel файла в таблицу
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[ExecLoadExcel] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[ExecLoadExcel]
+--      @PathName = <value>,
+--      @FileName = <value>,
+--      @SheetName = <value>,
+--      @TableName = <value>,
+--      @isMoveFile = 'true',
+--      @ReturnCode = NULL,
+--      @ReturnMessage = NULL  
+WITH EXECUTE AS 'dbo';
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [dbo].[ExecLoadExcel]
 	@PathName nvarchar(1000),
 	@FileName nvarchar(1000),

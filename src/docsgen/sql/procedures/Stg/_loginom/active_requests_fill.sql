@@ -1,7 +1,7 @@
 --DWH-1138
 -- Usage: запуск процедуры с параметрами
--- EXEC [_loginom].[active_requests_fill] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_loginom].[active_requests_fill];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [_loginom].[active_requests_fill] 
 as 
 begin

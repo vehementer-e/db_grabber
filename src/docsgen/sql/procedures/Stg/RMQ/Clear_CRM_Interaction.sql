@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [RMQ].[Clear_CRM_Interaction] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [RMQ].[Clear_CRM_Interaction] @dd = 10;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [RMQ].[Clear_CRM_Interaction]   
 	@dd int =10
 as

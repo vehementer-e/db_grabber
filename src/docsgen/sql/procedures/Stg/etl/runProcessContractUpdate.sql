@@ -31,8 +31,13 @@ select * from etl.ReloadData4Contract
 order by createdAt desc
 */
 -- Usage: запуск процедуры с параметрами
--- EXEC [etl].[runProcessContractUpdate] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [etl].[runProcessContractUpdate] @contractGuid = null
+	,@dateRepayment date = null
+	,@processType nvarchar(255) =  'contractUpdate'
+	,@processGUID nvarchar(36) = null 
+)
+ WITH EXECUTE AS OWNER;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [etl].[runProcessContractUpdate]
 (
 	@contractGuid nvarchar(36) --guid договора

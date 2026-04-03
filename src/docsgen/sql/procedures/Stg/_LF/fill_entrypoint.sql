@@ -1,7 +1,9 @@
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LF].[fill_entrypoint] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LF].[fill_entrypoint]
+--      @entrypoints = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [_LF].[fill_entrypoint]
 	@entrypoints [_lf].[utt_entrypoint] readonly 
 	,@debug bit = 0

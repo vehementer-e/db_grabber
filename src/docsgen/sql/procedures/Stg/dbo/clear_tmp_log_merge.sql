@@ -1,7 +1,7 @@
 -- exec dbo.clear_tmp_log_merge
 -- Usage: запуск процедуры с параметрами
--- EXEC dbo.clear_tmp_log_merge @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC dbo.clear_tmp_log_merge;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   PROC dbo.clear_tmp_log_merge
 as
 begin

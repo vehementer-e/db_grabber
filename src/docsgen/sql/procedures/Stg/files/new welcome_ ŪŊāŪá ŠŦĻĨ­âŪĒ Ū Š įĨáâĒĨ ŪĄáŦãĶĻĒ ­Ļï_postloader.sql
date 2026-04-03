@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC files.[new @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC files.[new welcome_ опрос клиентов о качестве обслуживания_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.[new welcome_ опрос клиентов о качестве обслуживания_postloader] as begin 
  begin tran 
   truncate table files.[new welcome_ опрос клиентов о качестве обслуживания] 

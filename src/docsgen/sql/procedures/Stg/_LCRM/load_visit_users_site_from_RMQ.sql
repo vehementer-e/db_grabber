@@ -1,7 +1,7 @@
 --exec [load_visit_users_site_from_RMQ]
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LCRM].[load_visit_users_site_from_RMQ] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LCRM].[load_visit_users_site_from_RMQ];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [_LCRM].[load_visit_users_site_from_RMQ]
 as
 

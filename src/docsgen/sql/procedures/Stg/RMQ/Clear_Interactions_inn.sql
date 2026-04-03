@@ -1,7 +1,7 @@
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [RMQ].[Clear_Interactions_inn] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [RMQ].[Clear_Interactions_inn] @dd = 3;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [RMQ].[Clear_Interactions_inn]
 	@dd int = 3
 as

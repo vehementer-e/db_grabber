@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [_fedor].[set_core_UserAndUserRole] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_fedor].[set_core_UserAndUserRole];
+-- Параметры соответствуют объявлению процедуры ниже.
  CREATE procedure [_fedor].[set_core_UserAndUserRole]
  as
  begin

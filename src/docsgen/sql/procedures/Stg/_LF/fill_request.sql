@@ -1,6 +1,8 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LF].[fill_request] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LF].[fill_request]
+--      @request = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   procedure [_LF].[fill_request]
 	@request [_lf].[utt_request] readonly
 	,@debug bit = 0 

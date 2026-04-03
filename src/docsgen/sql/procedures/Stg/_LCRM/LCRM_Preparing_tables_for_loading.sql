@@ -4,8 +4,8 @@
 -- Подготовка таблицы для загрузки.
 -- =======================================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LCRM].[LCRM_Preparing_tables_for_loading] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LCRM].[LCRM_Preparing_tables_for_loading] @reLoadFullData = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [_LCRM].[LCRM_Preparing_tables_for_loading]
 	@reLoadFullData bit = 0
 AS

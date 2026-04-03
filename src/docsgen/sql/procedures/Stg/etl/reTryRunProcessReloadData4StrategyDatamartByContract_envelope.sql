@@ -14,8 +14,12 @@ select *
 */
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [etl].[reTryRunProcessReloadData4StrategyDatamartByContract_envelope] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [etl].[reTryRunProcessReloadData4StrategyDatamartByContract_envelope]
+--      @processGUID = null,
+--      @whaitCompleted = 1,
+--      @timeOut = 40,
+--      @reTryCount = 10;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [etl].[reTryRunProcessReloadData4StrategyDatamartByContract_envelope]
 	@processGUID nvarchar(36) = null
 	,@whaitCompleted bit = 1

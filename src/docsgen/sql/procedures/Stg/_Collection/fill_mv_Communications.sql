@@ -4,8 +4,11 @@
 -- Description:	Процедура для обнолвения таблицы stg._Collection.mv_Communications
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [_Collection].[fill_mv_Communications] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_Collection].[fill_mv_Communications]
+--      @dtFrom = null,
+--      @dtTo = null,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     PROCEDURE [_Collection].[fill_mv_Communications] 
 	@dtFrom DATE = null,
 	@dtTo DATE = null,

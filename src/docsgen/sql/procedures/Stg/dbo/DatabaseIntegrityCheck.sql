@@ -1,6 +1,47 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[DatabaseIntegrityCheck] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[DatabaseIntegrityCheck]
+--      @Databases = NULL,
+--      @CheckCommands = 'CHECKDB',
+--      @PhysicalOnly = 'N',
+--      @NoIndex = 'N',
+--      @ExtendedLogicalChecks = 'N',
+--      @TabLock = 'N',
+--      @FileGroups = NULL,
+--      @Objects = NULL,
+--      @MaxDOP = NULL,
+--      @AvailabilityGroups = NULL,
+--      @AvailabilityGroupReplicas = 'ALL',
+--      @Updateability = 'ALL',
+--      @TimeLimit = NULL,
+--      @LockTimeout = NULL,
+--      @LockMessageSeverity = 16,
+--      @DatabaseOrder = NULL,
+--      @DatabasesInParallel = 'N',
+--      @LogToTable = 'N',
+--      @Execute = 'Y';
+-- Параметры соответствуют объявлению процедуры ниже.
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[DatabaseIntegrityCheck]
+--      @Databases = NULL,
+--      @CheckCommands = 'CHECKDB',
+--      @PhysicalOnly = 'N',
+--      @NoIndex = 'N',
+--      @ExtendedLogicalChecks = 'N',
+--      @TabLock = 'N',
+--      @FileGroups = NULL,
+--      @Objects = NULL,
+--      @MaxDOP = NULL,
+--      @AvailabilityGroups = NULL,
+--      @AvailabilityGroupReplicas = 'ALL',
+--      @Updateability = 'ALL',
+--      @TimeLimit = NULL,
+--      @LockTimeout = NULL,
+--      @LockMessageSeverity = 16,
+--      @DatabaseOrder = NULL,
+--      @DatabasesInParallel = 'N',
+--      @LogToTable = 'N',
+--      @Execute = 'Y';
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[DatabaseIntegrityCheck]
 
 @Databases nvarchar(max) = NULL,

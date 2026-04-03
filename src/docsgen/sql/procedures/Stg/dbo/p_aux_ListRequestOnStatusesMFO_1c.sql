@@ -5,8 +5,8 @@
 -- Description:	 
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[p_aux_ListRequestOnStatusesMFO_1c] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[p_aux_ListRequestOnStatusesMFO_1c];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[p_aux_ListRequestOnStatusesMFO_1c]
 AS
 BEGIN  --auxtab_ListRequestOnStatusesMFO_1c

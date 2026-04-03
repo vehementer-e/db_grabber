@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [velab].[loadHistoryInto_dwh_ka_Buffer_Table] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [velab].[loadHistoryInto_dwh_ka_Buffer_Table];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [velab].[loadHistoryInto_dwh_ka_Buffer_Table]
 as
 begin

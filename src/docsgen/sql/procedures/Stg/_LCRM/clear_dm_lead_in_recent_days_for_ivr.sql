@@ -4,8 +4,10 @@
 --		удаление старых записей
 -- =======================================================
 -- Usage: запуск процедуры с параметрами
--- EXEC _LCRM.clear_dm_lead_in_recent_days_for_ivr @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC _LCRM.clear_dm_lead_in_recent_days_for_ivr
+--      @ProcessGUID = NULL,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC _LCRM.clear_dm_lead_in_recent_days_for_ivr
 	@ProcessGUID varchar(36) = NULL, -- guid процесса
 	--@mode int = 1, -- 0 - full, 1 - increment

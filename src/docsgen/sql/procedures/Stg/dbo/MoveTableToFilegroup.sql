@@ -2,8 +2,12 @@
 -- exec dbo.MoveTableToFilegroup @table_name='_Collection.AspNetUsers', @filegroup='_Collection'
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[MoveTableToFilegroup] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[MoveTableToFilegroup]
+--      @table_name = <value>,
+--      @key_column = NULL,
+--      @filegroup = <value>,
+--      @online = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[MoveTableToFilegroup]
 (
     @table_name SYSNAME,              -- schema.table

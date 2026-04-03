@@ -2,8 +2,8 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[CreatePEPList] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[CreatePEPList];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [dbo].[CreatePEPList]
 as
 begin

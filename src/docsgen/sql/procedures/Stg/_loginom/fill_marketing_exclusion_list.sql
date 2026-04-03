@@ -6,8 +6,10 @@
 --@mode = 0 - полное заполнение таблицы marketing_exclusion_list
 --@mode = 1 - обработка только тех телефонных номеров, по которым были звонки за последние 2 дня
 -- Usage: запуск процедуры с параметрами
--- EXEC [_loginom].[fill_marketing_exclusion_list] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_loginom].[fill_marketing_exclusion_list]
+--      @mode = 0,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [_loginom].[fill_marketing_exclusion_list]
 	@mode int = 0,
 	@isDebug int = 0

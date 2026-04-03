@@ -3,8 +3,10 @@
 -- Description:	DWH-1921 Доработка IVR сервиса
 -- =======================================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [ivr].[fill_LCRM_LEAD] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [ivr].[fill_LCRM_LEAD]
+--      @ProcessGUID = NULL,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [ivr].[fill_LCRM_LEAD]
 	@ProcessGUID varchar(36) = NULL, -- guid процесса
 	--@mode int = 1, -- 0 - full, 1 - increment

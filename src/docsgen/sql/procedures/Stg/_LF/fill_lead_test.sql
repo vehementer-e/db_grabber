@@ -1,7 +1,9 @@
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LF].[fill_lead_test] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LF].[fill_lead_test]
+--      @leads = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 create          PROCEDURE [_LF].[fill_lead_test]
 	@leads [_lf].[utt_lead]  READONLY
 	,@debug bit = 0

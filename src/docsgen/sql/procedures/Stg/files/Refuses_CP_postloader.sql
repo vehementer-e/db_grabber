@@ -6,8 +6,8 @@
 --exec [files].[Refuses_CP_postloader]
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[Refuses_CP_postloader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[Refuses_CP_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[Refuses_CP_postloader]
 as begin
 DECLARE @mindate date

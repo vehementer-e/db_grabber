@@ -1,7 +1,10 @@
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[SmsUrlClickByDate_updater] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[SmsUrlClickByDate_updater]
+--      @url_ending = <value>,
+--      @date = <value>,
+--      @clicks = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [dbo].[SmsUrlClickByDate_updater]
  @url_ending  nvarchar(10)
 ,@date       nvarchar(50)

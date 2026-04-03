@@ -7,8 +7,13 @@
 
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[CompareStructureTables] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[CompareStructureTables]
+--      @sourceTable = <value>,
+--      @targetTable = <value>,
+--      @sourceDb = null,
+--      @targetDb = null,
+--      @excludeColumns = '';
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [dbo].[CompareStructureTables]
 	@sourceTable varchar(255)
 	,@targetTable varchar(255)

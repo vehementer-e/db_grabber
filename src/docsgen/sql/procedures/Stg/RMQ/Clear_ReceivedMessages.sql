@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC Rmq.Clear_ReceivedMessages @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC Rmq.Clear_ReceivedMessages @dd = 10;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure Rmq.Clear_ReceivedMessages
 	@dd int =10
 as

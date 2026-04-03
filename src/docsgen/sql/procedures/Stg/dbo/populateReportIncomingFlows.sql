@@ -16,8 +16,8 @@ select  t.* from dbo.reportIncomingFlows t
 			*/
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[pupulateReportIncomingFlows] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[pupulateReportIncomingFlows] @reloadDay = 1;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   PROCEDURE [dbo].[pupulateReportIncomingFlows]
 	@reloadDay smallint =  1
 AS

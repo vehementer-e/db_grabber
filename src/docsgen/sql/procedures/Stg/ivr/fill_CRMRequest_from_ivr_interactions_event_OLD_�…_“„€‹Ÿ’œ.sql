@@ -1,7 +1,9 @@
 --DROP PROC ivr.fill_CRMRequest_from_ivr_interactions_event
 -- Usage: запуск процедуры с параметрами
--- EXEC ivr.fill_CRMRequest_from_ivr_interactions_event @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC ivr.fill_CRMRequest_from_ivr_interactions_event
+--      @t_ivr_interactions_event = <value>,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC ivr.fill_CRMRequest_from_ivr_interactions_event
 	@t_ivr_interactions_event ivr.utt_ivr_interactions_event READONLY,
 	@isDebug bit = 0

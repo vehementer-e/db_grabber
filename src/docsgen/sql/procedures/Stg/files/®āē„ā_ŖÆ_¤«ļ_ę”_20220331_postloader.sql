@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC files.[отчет_кп_для_цб_20220331_postloader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC files.[отчет_кп_для_цб_20220331_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.[отчет_кп_для_цб_20220331_postloader] as begin 
  begin tran 
   truncate table files.отчет_кп_для_цб_20220331 

@@ -5,8 +5,8 @@
 
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[rep_CancelledRequestOnControlOfData] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[rep_CancelledRequestOnControlOfData];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[rep_CancelledRequestOnControlOfData] 
 	-- Add the parameters for the stored procedure here
 --	@DateReport dt,

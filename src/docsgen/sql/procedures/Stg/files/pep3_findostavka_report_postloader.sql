@@ -1,8 +1,8 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[pep3_findostavka_report_postloader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[pep3_findostavka_report_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [files].[pep3_findostavka_report_postloader]
 as
 begin

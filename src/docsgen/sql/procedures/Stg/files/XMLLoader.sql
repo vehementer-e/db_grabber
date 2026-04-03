@@ -7,8 +7,12 @@ declare @ReceivedMessage nvarchar(max) = '
 exec   [files].[XMLLoader] null, null, null, null
 */
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[XMLLoader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[XMLLoader]
+--      @passport = <value>,
+--      @FIO = <value>,
+--      @birthdate = <value>,
+--      @xmldata = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [files].[XMLLoader]
 	  
    @passport nvarchar(255)

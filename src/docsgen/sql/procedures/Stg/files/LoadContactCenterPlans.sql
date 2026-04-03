@@ -5,8 +5,8 @@
 -- exec  [files].[LoadContactCenterPlans]
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[LoadContactCenterPlans] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[LoadContactCenterPlans];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[LoadContactCenterPlans]
 as
 begin

@@ -1,8 +1,11 @@
 
 --exec [ivr].[GetInfo4IVR] @caller = '89186740022'
 -- Usage: запуск процедуры с параметрами
--- EXEC [ivr].[GetInfo4IVR] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [ivr].[GetInfo4IVR]
+--      @caller = <value>,
+--      @sourceCompany = 'carmoney'
+	WITH EXECUTE AS OWNER;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [ivr].[GetInfo4IVR]
 	@caller nvarchar(11)
 	,@sourceCompany nvarchar(255) = 'carmoney'

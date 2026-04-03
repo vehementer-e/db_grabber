@@ -1,7 +1,7 @@
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[TablesOnPrimary] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[TablesOnPrimary];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [dbo].[TablesOnPrimary]
 as
 begin

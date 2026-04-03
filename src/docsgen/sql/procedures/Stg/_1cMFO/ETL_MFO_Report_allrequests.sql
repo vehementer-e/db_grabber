@@ -1,8 +1,8 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC _1cMFO.ETL_MFO_Report_allrequests @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC _1cMFO.ETL_MFO_Report_allrequests;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   procedure _1cMFO.ETL_MFO_Report_allrequests
 as
 begin

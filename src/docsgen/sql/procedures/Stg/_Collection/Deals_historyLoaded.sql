@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [_Collection].[Deals_historyLoaded] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_Collection].[Deals_historyLoaded];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [_Collection].[Deals_historyLoaded]
 --dwh-764
  as 

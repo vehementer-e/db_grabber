@@ -1,8 +1,8 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [dbo].[ShrinkDataFiles] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [dbo].[ShrinkDataFiles];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [dbo].[ShrinkDataFiles]
 as
 begin

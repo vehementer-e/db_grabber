@@ -2,8 +2,8 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [_1cCRM].[RMQ_CRM_Requests_Loader_curDay] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_1cCRM].[RMQ_CRM_Requests_Loader_curDay];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [_1cCRM].[RMQ_CRM_Requests_Loader_curDay]
 	
 as

@@ -1,8 +1,10 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LF].[fill_autoBrand] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LF].[fill_autoBrand]
+--      @autoBrands = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [_LF].[fill_autoBrand]
 	@autoBrands _lf.[utt_autoBrand] readonly 
 	,@debug bit = 0

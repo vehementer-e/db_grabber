@@ -6,8 +6,8 @@
 -- exec  [files].[CollectionPlan_postloader]
 -- =============================================
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[CollectionPlan_postloader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[CollectionPlan_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[CollectionPlan_postloader]
 as begin
 DECLARE @mindate date

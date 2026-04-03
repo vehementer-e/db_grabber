@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [files].[collection_to_KA_postloader] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [files].[collection_to_KA_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [files].[collection_to_KA_postloader]
 	
 as

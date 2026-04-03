@@ -1,6 +1,13 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC dbo.CreateMonthlyFG_PF_PS @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC dbo.CreateMonthlyFG_PF_PS
+--      @SchemaName = <value>,
+--      @TableName = <value>,
+--      @TableAlias = <value>,
+--      @PartitionColumn = <value>,
+--      @PathToFile = NULL,
+--      @FutureMonths = 24,
+--      @PastMonths = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROCEDURE dbo.CreateMonthlyFG_PF_PS
 (
     @SchemaName      nvarchar(255),

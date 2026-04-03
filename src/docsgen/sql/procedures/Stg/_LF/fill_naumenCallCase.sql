@@ -5,8 +5,10 @@
 
 
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LF].[fill_naumenCallCase] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LF].[fill_naumenCallCase]
+--      @naumenCallCases = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [_LF].[fill_naumenCallCase]
 	@naumenCallCases _lf.[utt_naumen_call_case] readonly
 	,@debug bit = 0 

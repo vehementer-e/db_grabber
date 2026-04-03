@@ -1,7 +1,7 @@
 --exec [_LCRM].[[load_lcrm_launch_control_from_RMQ]
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LCRM].[load_lcrm_launch_control_from_RMQ] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LCRM].[load_lcrm_launch_control_from_RMQ] @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [_LCRM].[load_lcrm_launch_control_from_RMQ]
 	@isDebug int = 0
 as

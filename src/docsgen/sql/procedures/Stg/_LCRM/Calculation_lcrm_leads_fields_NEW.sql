@@ -3,6 +3,12 @@
 -- Description:	DWH-1567 Оптимизация хранения лидов. Отказ от использования таблицы lcrm_leads_full_channel
 -- расчет вычисляемых полей и заполнение таблицы _LCRM.lcrm_leads_full_calculated
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.Calculation_lcrm_leads_fields_NEW
+--      @Debug = 0,
+--      @Insert_Into_lcrm_leads_full = 0 
+	WITH RECOMPILE;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC _LCRM.Calculation_lcrm_leads_fields_NEW
 	@Debug int = 0, -- 0 - штатное выполнение, 1 - отладочный режим
 	@Insert_Into_lcrm_leads_full int = 0 -- 1 - добавление записей в _LCRM.lcrm_leads_full

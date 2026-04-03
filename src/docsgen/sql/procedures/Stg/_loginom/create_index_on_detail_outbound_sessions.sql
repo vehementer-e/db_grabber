@@ -2,8 +2,10 @@
 --создание для таблицы NaumenDbReport.dbo.detail_outbound_sessions
 --индексов с фильтром attempt_start >= <date>
 -- Usage: запуск процедуры с параметрами
--- EXEC _loginom.create_index_on_detail_outbound_sessions @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC _loginom.create_index_on_detail_outbound_sessions
+--      @index_name = '',
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC _loginom.create_index_on_detail_outbound_sessions
 	@index_name varchar(255) = '',
 	@isDebug int = 0

@@ -24,8 +24,10 @@ CREATE type [_lf].[utt_source]as table(
 
 */
 -- Usage: запуск процедуры с параметрами
--- EXEC [_LF].[fill_source_account] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_LF].[fill_source_account]
+--      @source_accounts = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   procedure [_LF].[fill_source_account]
 	@source_accounts  [_lf].[utt_source_account] readonly
 	,@debug bit = 0 

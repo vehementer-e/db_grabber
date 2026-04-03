@@ -1,8 +1,8 @@
 --exec dbo.monitoring_changed_dpd_to_0 @dayCheck = '2021-08-22'
 --DWH-1300
 -- Usage: запуск процедуры с параметрами
--- EXEC monitoring_changed_dpd_to_0 @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC monitoring_changed_dpd_to_0 @dayCheck = null;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   procedure monitoring_changed_dpd_to_0
 	@dayCheck date = null
 as

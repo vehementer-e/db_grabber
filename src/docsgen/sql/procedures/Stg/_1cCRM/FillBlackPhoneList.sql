@@ -2,8 +2,8 @@
 DWH-1340
 */
 -- Usage: запуск процедуры с параметрами
--- EXEC [_1cCRM].[FillBlackPhoneList] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_1cCRM].[FillBlackPhoneList];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [_1cCRM].[FillBlackPhoneList]
 as
 begin

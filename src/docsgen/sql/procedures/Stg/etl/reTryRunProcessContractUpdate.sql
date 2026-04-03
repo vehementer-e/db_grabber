@@ -1,6 +1,6 @@
 -- Usage: запуск процедуры с параметрами
--- EXEC [etl].[reTryRunProcessContractUpdate] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [etl].[reTryRunProcessContractUpdate] @processGUID = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [etl].[reTryRunProcessContractUpdate]
 	@processGUID nvarchar(36)
 as

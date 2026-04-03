@@ -2,8 +2,8 @@
 
 /*DWH-991*/
 -- Usage: запуск процедуры с параметрами
--- EXEC [_loginom].[fill_marketing_nonTarget_phone_list] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [_loginom].[fill_marketing_nonTarget_phone_list];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [_loginom].[fill_marketing_nonTarget_phone_list]
 as
 begin

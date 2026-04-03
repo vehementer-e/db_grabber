@@ -2,8 +2,8 @@
 --checked 12.03.2020
 --exec [_LCRM].[leadsRMQClear]
 -- Usage: запуск процедуры с параметрами
--- EXEC [RMQ].[Clear_LCRM_LeadRows] @param1 = <value>, @param2 = <value>;
--- Список и типы параметров смотрите в объявлении процедуры ниже.
+-- EXEC [RMQ].[Clear_LCRM_LeadRows] @bathSize = 5000;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE    procedure [RMQ].[Clear_LCRM_LeadRows]
 	@bathSize int = 5000
 as
