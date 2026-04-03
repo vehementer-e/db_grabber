@@ -32,6 +32,7 @@ BEGIN
         @suffix CHAR(8),
         @old_renamed SYSNAME,
         @candidate SYSNAME,
+        @rename_objname NVARCHAR(520),
         @n INT = 0,
         @utc_date DATE = CONVERT(date, SYSUTCDATETIME());
 
@@ -117,6 +118,9 @@ BEGIN
 
     ------------------------------------------------------------
     -- Создание <table>_new (если еще не создана)
+    -- Важно: не используем SELECT TOP(0) INTO, т.к. он не переносит
+    -- default-constraints, computed columns и collations, а также
+    -- не задает TEXTIMAGE_ON для LOB. Здесь схема собирается явно.
     ------------------------------------------------------------
     IF OBJECT_ID(QUOTENAME(@schema) + N'.' + QUOTENAME(@new_table), 'U') IS NULL
     BEGIN
@@ -279,7 +283,8 @@ BEGIN
     BEGIN TRAN;
     BEGIN TRY
         EXEC sys.sp_rename @objname = @table_name, @newname = @old_renamed, @objtype = 'OBJECT';
-        EXEC sys.sp_rename @objname = QUOTENAME(@schema) + N'.' + QUOTENAME(@new_table), @newname = @table, @objtype = 'OBJECT';
+        SET @rename_objname = QUOTENAME(@schema) + N'.' + QUOTENAME(@new_table);
+        EXEC sys.sp_rename @objname = @rename_objname, @newname = @table, @objtype = 'OBJECT';
         COMMIT TRAN;
     END TRY
     BEGIN CATCH
