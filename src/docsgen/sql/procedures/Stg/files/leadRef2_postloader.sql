@@ -5,6 +5,9 @@
 -- Description:	<Description,,>
 -- exec  [files].[leadRef2_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[leadRef2_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[leadRef2_postloader]
 as begin
 set nocount on

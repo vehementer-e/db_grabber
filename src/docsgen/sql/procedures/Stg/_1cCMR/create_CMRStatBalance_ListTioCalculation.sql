@@ -1,6 +1,9 @@
 
 
  --exec _1cCMR.[create_CMRStatBalance_ListTioCalculation]
+-- Usage: запуск процедуры с параметрами
+-- EXEC _1cCMR.create_CMRStatBalance_ListTioCalculation;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC _1cCMR.create_CMRStatBalance_ListTioCalculation
 	
 as

@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[ReportKPI_4Plazma_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [files].[ReportKPI_4Plazma_postloader]
 as
 begin

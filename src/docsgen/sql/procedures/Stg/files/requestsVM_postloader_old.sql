@@ -1,5 +1,8 @@
  
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[requestsVM_postloader_old];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [files].[requestsVM_postloader_old]
 
 as

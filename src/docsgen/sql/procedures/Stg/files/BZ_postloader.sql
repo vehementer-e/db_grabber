@@ -4,6 +4,9 @@
 -- Description:	<Description,,>
 -- exec  [files].[BZ_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[BZ_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[BZ_postloader]
 as begin
 DECLARE @mindate date

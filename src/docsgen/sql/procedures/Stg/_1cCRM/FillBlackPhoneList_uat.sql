@@ -1,6 +1,9 @@
 /*
 DWH-1340
 */
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_1cCRM].[FillBlackPhoneList_uat];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [_1cCRM].[FillBlackPhoneList_uat]
 as
 begin

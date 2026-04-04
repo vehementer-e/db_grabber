@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[fill_Need2LoadFileFromFS];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [etl].[fill_Need2LoadFileFromFS]
 as
 begin

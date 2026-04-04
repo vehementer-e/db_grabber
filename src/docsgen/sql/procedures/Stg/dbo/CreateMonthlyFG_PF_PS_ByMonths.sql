@@ -1,4 +1,11 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC dbo.CreateMonthlyFG_PF_PS_ByMonths
+--      @TableAlias = <value>,
+--      @PathToFile = <value>,
+--      @MonthsBack = 12,
+--      @MonthsForward = 12;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROCEDURE dbo.CreateMonthlyFG_PF_PS_ByMonths
 (
     @TableAlias    sysname,           

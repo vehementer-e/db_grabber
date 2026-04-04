@@ -1,6 +1,11 @@
 
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[fill_mmsDecision]
+--      @mmsDecisions = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [_LF].[fill_mmsDecision]
 	@mmsDecisions [_lf].[utt_mmsDecision] readonly 
 	,@debug bit = 0

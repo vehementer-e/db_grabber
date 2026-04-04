@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [RMQ].[VeLabInteractionResult_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [RMQ].[VeLabInteractionResult_postloader]
  as
 

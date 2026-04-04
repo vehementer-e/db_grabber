@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.CourtOrders_payments_postloader;
+-- Параметры соответствуют объявлению процедуры ниже.
 create     procedure files.CourtOrders_payments_postloader
 as begin
 set nocount on

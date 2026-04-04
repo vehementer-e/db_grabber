@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[collection_withdraw_from_KA_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [files].[collection_withdraw_from_KA_postloader]
 	
 as

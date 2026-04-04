@@ -1,5 +1,8 @@
 --checked 12.03.2020
 --exec [_LCRM].[LaunchControl2DWH]
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LCRM].[LaunchControl2DWH];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [_LCRM].[LaunchControl2DWH]
 as
 begin

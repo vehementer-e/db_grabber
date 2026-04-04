@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.cession_postloader;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   procedure files.cession_postloader
 as
 begin

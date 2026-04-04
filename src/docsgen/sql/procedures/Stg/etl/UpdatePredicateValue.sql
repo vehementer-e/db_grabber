@@ -1,3 +1,9 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[UpdatePredicateValue]
+--      @TableName = <value>,
+--      @DataBaseName = 'STG',
+--      @ProcessGUID = null;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [etl].[UpdatePredicateValue]
 	@TableName nvarchar(max),
 	@DataBaseName nvarchar(max) = 'STG',

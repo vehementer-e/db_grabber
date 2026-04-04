@@ -4,6 +4,9 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[p_ForControlOnData];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[p_ForControlOnData] 
 	-- Add the parameters for the stored procedure here
 

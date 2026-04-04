@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.[план по каналам];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.[план по каналам] as begin 
  begin tran 
   truncate table files.[план по каналам_buffer] 

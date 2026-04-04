@@ -3,6 +3,11 @@
 -- Create date: 22.11.2023
 -- Description: DWH-2340 Проверка валидности объектов Find invalid objects
 -- ============================================= 
+-- Usage: запуск процедуры с параметрами
+-- EXEC dbo.Monitoring_invalid_objects
+--      @isDebug = 0,
+--      @ProcessGUID = NULL;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC dbo.Monitoring_invalid_objects
 	@isDebug int = 0,
 	@ProcessGUID varchar(36) = NULL -- guid процесса

@@ -5,6 +5,9 @@
 -- Description:	<Description,,>
 -- exec  [files].[FTE_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[FTE_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[FTE_postloader]
 as
 begin

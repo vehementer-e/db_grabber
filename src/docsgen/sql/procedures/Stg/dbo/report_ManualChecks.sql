@@ -1,3 +1,8 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[report_ManualChecks]
+--      @StartDate = <value>,
+--      @EndDate = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROCEDURE [dbo].[report_ManualChecks]
     @StartDate DATE,
     @EndDate   DATE

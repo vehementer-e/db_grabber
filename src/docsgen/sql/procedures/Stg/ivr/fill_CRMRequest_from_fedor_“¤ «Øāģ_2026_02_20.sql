@@ -6,6 +6,11 @@
 --select * from ivr.IVR_Data
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC ivr.fill_CRMRequest_from_fedor
+--      @t_fedor_request = <value>,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC ivr.fill_CRMRequest_from_fedor
 	@t_fedor_request ivr.utt_fedor_request READONLY,
 	@isDebug bit = 0

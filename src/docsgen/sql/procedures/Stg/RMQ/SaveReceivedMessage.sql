@@ -1,4 +1,14 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [RMQ].[SaveReceivedMessage]
+--      @FromHost = <value>,
+--      @FromHostVirtualHost = <value>,
+--      @FromExchange = <value>,
+--      @FromQueue = <value>,
+--      @FromQueueRoutingKey = <value>,
+--      @ReceivedMessage = <value>,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [RMQ].[SaveReceivedMessage]
 	@FromHost nvarchar(255)
   , @FromHostVirtualHost nvarchar(100)

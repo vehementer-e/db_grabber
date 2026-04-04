@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_1cCRM].[FullBlackPhoneList_FROM_CRM];
+-- Параметры соответствуют объявлению процедуры ниже.
 create     procedure [_1cCRM].[FullBlackPhoneList_FROM_CRM]
 as
 begin

@@ -1,4 +1,7 @@
 --files.DeadPersons_postloader
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[DeadPersons_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [files].[DeadPersons_postloader]
 as begin
 set nocount on

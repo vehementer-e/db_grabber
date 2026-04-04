@@ -1,4 +1,9 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[fill_product_type]
+--      @productTypes = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [_LF].[fill_product_type]
 	@productTypes [_lf].utt_productType readonly
 	,@debug bit = 0

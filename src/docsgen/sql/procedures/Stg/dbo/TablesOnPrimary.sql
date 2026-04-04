@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[TablesOnPrimary];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [dbo].[TablesOnPrimary]
 as
 begin

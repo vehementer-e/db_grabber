@@ -1,5 +1,8 @@
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[ShrinkDataFiles];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [dbo].[ShrinkDataFiles]
 as
 begin

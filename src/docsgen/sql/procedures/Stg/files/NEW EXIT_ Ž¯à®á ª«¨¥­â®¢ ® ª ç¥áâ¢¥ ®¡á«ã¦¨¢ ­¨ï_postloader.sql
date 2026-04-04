@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.[NEW EXIT_ Опрос клиентов о качестве обслуживания_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.[NEW EXIT_ Опрос клиентов о качестве обслуживания_postloader] as begin 
  begin tran 
   truncate table files.[NEW EXIT_ Опрос клиентов о качестве обслуживания] 

@@ -37,6 +37,54 @@ exec[etl].[AddTableToEtlProcess]
 */
 
 -- ============================================= 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[AddTableToEtlProcess]
+--      @Mode = <value>,
+--      @EtlProcessName = <value>,
+--      @SourceServer = NULL,
+--      @SourceDataBase = <value>,
+--      @SourceLogin = NULL,
+--      @SourceShemeTableName = '',
+--      @SourceTable = <value>,
+--      @TargetServer = NULL,
+--      @TargetDataBase = <value>,
+--      @TargetLogin = NULL,
+--      @TargetScheme = <value>,
+--      @TargetTable = <value>,
+--      @increment_field = null,
+--      @increment_field_for_source = null,
+--      @increment_field_if_null = null,
+--      @increment_field_type = null,
+--      @indentity_field = 'id',
+--      @ExcludeColumns = null,
+--      @AdditionalColumns = null,
+--      @SelectColumns = NULL,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[AddTableToEtlProcess]
+--      @Mode = <value>,
+--      @EtlProcessName = <value>,
+--      @SourceServer = NULL,
+--      @SourceDataBase = <value>,
+--      @SourceLogin = NULL,
+--      @SourceShemeTableName = '',
+--      @SourceTable = <value>,
+--      @TargetServer = NULL,
+--      @TargetDataBase = <value>,
+--      @TargetLogin = NULL,
+--      @TargetScheme = <value>,
+--      @TargetTable = <value>,
+--      @increment_field = null,
+--      @increment_field_for_source = null,
+--      @increment_field_if_null = null,
+--      @increment_field_type = null,
+--      @indentity_field = 'id',
+--      @ExcludeColumns = null,
+--      @AdditionalColumns = null,
+--      @SelectColumns = NULL,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [etl].[AddTableToEtlProcess]
 	@Mode varchar(127), -- 'full', 'increment'
 	@EtlProcessName varchar(127),

@@ -4,6 +4,9 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[ChannelRequestExceptions_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[ChannelRequestExceptions_postloader]
 as begin
 set nocount on

@@ -15,6 +15,9 @@ select  t.* from dbo.reportIncomingFlows t
 			where [request_creation_date]>=@lastDay
 			*/
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[pupulateReportNumberOfRequestsMC] @reloadDay = 1;
+-- Параметры соответствуют объявлению процедуры ниже.
 create   PROCEDURE [dbo].[pupulateReportNumberOfRequestsMC]
 	@reloadDay smallint =  1
 AS

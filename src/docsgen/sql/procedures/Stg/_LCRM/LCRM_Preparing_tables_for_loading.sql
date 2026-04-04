@@ -3,6 +3,9 @@
 -- Description:	DWH-1475 Переписать шаги job ETL. LCRM CSV FULL at 03 30
 -- Подготовка таблицы для загрузки.
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LCRM].[LCRM_Preparing_tables_for_loading] @reLoadFullData = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [_LCRM].[LCRM_Preparing_tables_for_loading]
 	@reLoadFullData bit = 0
 AS

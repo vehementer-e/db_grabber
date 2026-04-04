@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [RMQ].[Clear_cmr_contractDebt] @dd = 10;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [RMQ].[Clear_cmr_contractDebt]
 	@dd int =10
 as

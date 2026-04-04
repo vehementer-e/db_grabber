@@ -4,6 +4,9 @@
 -- Description:	Таблица Офисы партнеров
 -- =============================================
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[P_Aux_OfficesOfPartnersMFO_1c];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[P_Aux_OfficesOfPartnersMFO_1c] 
 	-- Add the parameters for the stored procedure here
 AS

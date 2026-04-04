@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [ivr].[fill_ProductAndCompanyMapping];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [ivr].[fill_ProductAndCompanyMapping]
 as
 begin try

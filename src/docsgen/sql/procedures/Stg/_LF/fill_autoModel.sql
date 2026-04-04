@@ -1,5 +1,10 @@
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[fill_autoModel]
+--      @autoModels = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [_LF].[fill_autoModel]
 	@autoModels [_lf].[utt_autoModel] readonly 
 	,@debug bit = 0

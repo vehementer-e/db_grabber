@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[deleteOldDraftCommunications];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[deleteOldDraftCommunications]
 AS
 BEGIN

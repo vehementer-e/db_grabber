@@ -2,6 +2,11 @@
 -- Create: 4.04.2023. А.Никитин
 -- Description:	DWH-1921 Доработка IVR сервиса
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [ivr].[fill_LCRM_LEAD]
+--      @ProcessGUID = NULL,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [ivr].[fill_LCRM_LEAD]
 	@ProcessGUID varchar(36) = NULL, -- guid процесса
 	--@mode int = 1, -- 0 - full, 1 - increment

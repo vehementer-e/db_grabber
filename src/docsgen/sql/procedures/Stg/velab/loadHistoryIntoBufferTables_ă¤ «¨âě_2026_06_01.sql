@@ -1,5 +1,8 @@
 --exec [velab].[loadHistoryIntoBufferTables]
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [velab].[loadHistoryIntoBufferTables];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [velab].[loadHistoryIntoBufferTables]
 WITH EXECUTE AS 'dbo'
 as

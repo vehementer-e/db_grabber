@@ -3,6 +3,18 @@
 -- Description:	DWH-1567 Оптимизация хранения лидов. 
 -- вернуть рекордсет с информацией о лидах
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LCRM].[get_leads]
+--      @Debug = 0,
+--      @ID_Table_Name = NULL,
+--      @Begin_Registered = NULL,
+--      @End_Registered = NULL,
+--      @Return_Table_Name = <value>,
+--      @Fields_List = NULL,
+--      @Return_Number = NULL,
+--      @Return_Message = NULL,
+--      @where = NULL;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [_LCRM].[get_leads]
 	@Debug int = 0, -- 0 - штатное выполнение, 1 - отладочный режим
 	--@ID_List _LCRM.lead_id_list READONLY, -- таблица со списком ID

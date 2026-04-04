@@ -5,6 +5,9 @@
 -- Description:	<Description,,>
 -- exec  [files].[CollectionPlan_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[CollectionPlan_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[CollectionPlan_postloader]
 as begin
 DECLARE @mindate date

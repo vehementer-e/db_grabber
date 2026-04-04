@@ -1,3 +1,41 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[CommandExecute]
+--      @Command = <value>,
+--      @CommandType = <value>,
+--      @Mode = <value>,
+--      @Comment = NULL,
+--      @DatabaseName = NULL,
+--      @SchemaName = NULL,
+--      @ObjectName = NULL,
+--      @ObjectType = NULL,
+--      @IndexName = NULL,
+--      @IndexType = NULL,
+--      @StatisticsName = NULL,
+--      @PartitionNumber = NULL,
+--      @ExtendedInfo = NULL,
+--      @LockMessageSeverity = 16,
+--      @LogToTable = <value>,
+--      @Execute = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[CommandExecute]
+--      @Command = <value>,
+--      @CommandType = <value>,
+--      @Mode = <value>,
+--      @Comment = NULL,
+--      @DatabaseName = NULL,
+--      @SchemaName = NULL,
+--      @ObjectName = NULL,
+--      @ObjectType = NULL,
+--      @IndexName = NULL,
+--      @IndexType = NULL,
+--      @StatisticsName = NULL,
+--      @PartitionNumber = NULL,
+--      @ExtendedInfo = NULL,
+--      @LockMessageSeverity = 16,
+--      @LogToTable = <value>,
+--      @Execute = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[CommandExecute]
 
 @Command nvarchar(max),

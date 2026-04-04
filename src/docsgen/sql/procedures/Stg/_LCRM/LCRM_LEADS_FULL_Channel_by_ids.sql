@@ -2,6 +2,13 @@
 -- Modified: 14.02.2022. А.Никитин
 -- Description:	DWH-1567 Оптимизация хранения лидов. Отказ от использования таблицы lcrm_leads_full_channel
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.LCRM_LEADS_FULL_Channel_by_ids
+--      @Debug = 0,
+--      @ID_List_table_name = NULL,
+--      @PartitionId = NULL,
+--      @Insert_Into_lcrm_leads_full = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC _LCRM.LCRM_LEADS_FULL_Channel_by_ids
 	@Debug int = 0, -- 0 - штатное выполнение, 1 - отладочный режим
 	@ID_List_table_name varchar(100) = NULL, -- название врем. табл. с о списком ID

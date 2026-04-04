@@ -1,4 +1,7 @@
 --DWH-1007
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_loginom].[fill_marketing_prioritization_nonTarget_phone_list];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [_loginom].[fill_marketing_prioritization_nonTarget_phone_list]
 as
 begin

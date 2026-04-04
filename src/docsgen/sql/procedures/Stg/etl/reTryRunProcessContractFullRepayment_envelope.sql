@@ -1,5 +1,12 @@
 --перезапуск заданий на по contractFullRepayment за сегодня
 --[etl].[reTryRunProcessContractFullRepayment_envelope] @processGUID = '17F70DDA-207F-43C4-88B4-CB0413852298'
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[reTryRunProcessContractFullRepayment_envelope]
+--      @processGUID = null,
+--      @whaitCompleted = 1,
+--      @timeOut = 10,
+--      @reTryCount = 10;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [etl].[reTryRunProcessContractFullRepayment_envelope]
 	@processGUID nvarchar(36) = null
 	,@whaitCompleted bit = 1

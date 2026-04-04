@@ -1,4 +1,7 @@
 --exec [velab].[CRMCallResultsHistory] 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [velab].[CRMCallResultsHistory];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE    procedure [velab].[CRMCallResultsHistory] 
 
 as

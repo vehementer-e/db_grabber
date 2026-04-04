@@ -4,6 +4,9 @@
 -- Description:	Обновление таблицы stg._fedor.core_user 
 --				без использования АД
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC _fedor.[update_core_user];
+-- Параметры соответствуют объявлению процедуры ниже.
 create   PROCEDURE _fedor.[update_core_user] 
 AS
 BEGIN

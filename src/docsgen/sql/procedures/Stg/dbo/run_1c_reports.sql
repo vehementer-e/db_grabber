@@ -3,6 +3,9 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[run_1c_reports];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[run_1c_reports]
 	
 AS

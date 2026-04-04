@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [etl].[reTryRunProcessContractUpdate] @processGUID = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [etl].[reTryRunProcessContractUpdate]
 	@processGUID nvarchar(36)
 as

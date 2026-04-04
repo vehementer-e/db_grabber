@@ -3,6 +3,11 @@
 --truncate table ivr.IVR_Data
 --select * from ivr.IVR_Data
 --drop PROC ivr.fill_CRMRequest_from_ivr_crm_requests
+-- Usage: запуск процедуры с параметрами
+-- EXEC [ivr].fill_ivr_requests_from_rmq
+--      @t_request = <value>,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 create     PROC [ivr].fill_ivr_requests_from_rmq
 	@t_request ivr.utt_ivr_data READONLY,
 	@isDebug bit = 0

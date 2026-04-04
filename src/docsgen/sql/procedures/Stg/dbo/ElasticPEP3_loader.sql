@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[ElasticPEP3_loader] @guid = '3D0A5ECD-DA58-4F3B-9760-AD20B6DDA12B';
+-- Параметры соответствуют объявлению процедуры ниже.
   CREATE   procedure [dbo].[ElasticPEP3_loader]
   @guid char(36)='3D0A5ECD-DA58-4F3B-9760-AD20B6DDA12B'
   as

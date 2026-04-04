@@ -1,5 +1,13 @@
 --[_lf].[Load_LeadFlowData_from_RMQ_byThreadId] @ThreadId = 0, @debug = 1
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[Load_LeadFlowData_from_RMQ_byThreadId]
+--      @ThreadId = null,
+--      @ThreadIds = null,
+--      @batchSize = 15000,
+--      @debug = 0
+WITH RECOMPILE;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE       procedure [_LF].[Load_LeadFlowData_from_RMQ_byThreadId]
 	@ThreadId smallint = null
 	,@ThreadIds nvarchar(max) = null 

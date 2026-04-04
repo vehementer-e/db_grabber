@@ -6,6 +6,14 @@
 -- exec  dbo.CompareStructureTables @sourceTable = 'tmp._1cMFO_Документ_DZ_ПредварительнаяЗаявка', @sourceDb = 'stg',  @targetTable = '_1cMFO.Документ_DZ_ПредварительнаяЗаявка', @targetDb = 'stg'
 
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[CompareStructureTables]
+--      @sourceTable = <value>,
+--      @targetTable = <value>,
+--      @sourceDb = null,
+--      @targetDb = null,
+--      @excludeColumns = '';
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC [dbo].[CompareStructureTables]
 	@sourceTable varchar(255)
 	,@targetTable varchar(255)

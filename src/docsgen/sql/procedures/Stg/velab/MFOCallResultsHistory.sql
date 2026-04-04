@@ -1,5 +1,8 @@
 
 --exec [velab].[MFOCallResultsHistory] 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [velab].[MFOCallResultsHistory];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE     procedure [velab].[MFOCallResultsHistory] 
 as
 begin

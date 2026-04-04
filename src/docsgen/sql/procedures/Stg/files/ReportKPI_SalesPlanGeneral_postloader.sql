@@ -8,6 +8,9 @@
 -- Description:	<Description,,>
 --exec [files].[ReportKPI_SalesPlanGeneral_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[ReportKPI_SalesPlanGeneral_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[ReportKPI_SalesPlanGeneral_postloader]
 as begin
 set nocount on

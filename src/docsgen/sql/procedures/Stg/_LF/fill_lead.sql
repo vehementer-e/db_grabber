@@ -1,4 +1,9 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[fill_lead]
+--      @leads = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE          PROCEDURE [_LF].[fill_lead]
 	@leads [_lf].[utt_lead]  READONLY
 	,@debug bit = 0

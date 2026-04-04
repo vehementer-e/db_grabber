@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC files.[installment выгрузка из вупры_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE files.[installment выгрузка из вупры_postloader] as begin 
  begin tran 
   truncate table files.[installment выгрузка из вупры] 

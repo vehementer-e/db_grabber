@@ -1,6 +1,12 @@
 
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_yandexmetrica].[CustomReport_postloader]
+--      @ReportName = <value>,
+--      @ReportDateFrom = <value>,
+--      @ReportDateTo = <value>;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure  [_yandexmetrica].[CustomReport_postloader]
  @ReportName nvarchar(255)
 ,@ReportDateFrom date

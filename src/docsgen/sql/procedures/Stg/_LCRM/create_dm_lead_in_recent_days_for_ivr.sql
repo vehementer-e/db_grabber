@@ -2,6 +2,11 @@
 -- Create: 31.03.2023. А.Никитин
 -- Description:	DWH-2008 Оперативная витрина по лидам за последние 5 дней
 -- =======================================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.create_dm_lead_in_recent_days_for_ivr
+--      @ProcessGUID = NULL,
+--      @isDebug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC _LCRM.create_dm_lead_in_recent_days_for_ivr
 	@ProcessGUID varchar(36) = NULL, -- guid процесса
 	--@mode int = 1, -- 0 - full, 1 - increment

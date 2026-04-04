@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[CollectionPlan_4Plazma_INST_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROC [files].[CollectionPlan_4Plazma_INST_postloader]
 as
 BEGIN

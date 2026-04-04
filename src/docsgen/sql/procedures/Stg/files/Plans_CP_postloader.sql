@@ -6,6 +6,9 @@
 -- Description:	<Description,,>
 --exec [files].[Plans_CP_postloader]
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [files].[Plans_CP_postloader];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [files].[Plans_CP_postloader]
 as begin
 DECLARE @mindate date

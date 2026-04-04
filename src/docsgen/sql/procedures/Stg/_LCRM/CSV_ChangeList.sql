@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC _LCRM.CSV_ChangeList;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROC _LCRM.CSV_ChangeList
 as
 begin

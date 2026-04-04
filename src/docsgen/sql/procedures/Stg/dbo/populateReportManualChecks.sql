@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[populateReportManualChecks] @reloadDay = 1;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   PROCEDURE [dbo].[populateReportManualChecks]
 	@reloadDay smallint =  1
 AS

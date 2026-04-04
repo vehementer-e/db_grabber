@@ -1,6 +1,9 @@
 
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[CreatePEPList];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [dbo].[CreatePEPList]
 as
 begin

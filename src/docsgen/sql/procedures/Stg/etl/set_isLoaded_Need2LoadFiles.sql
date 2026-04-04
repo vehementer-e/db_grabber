@@ -1,4 +1,7 @@
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC etl.set_isLoaded_Need2LoadFiles;
+-- Параметры соответствуют объявлению процедуры ниже.
 create procedure etl.set_isLoaded_Need2LoadFiles
 as
 begin try

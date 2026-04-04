@@ -1,3 +1,6 @@
+-- Usage: запуск процедуры с параметрами
+-- EXEC [velab].[loadHistoryInto_dwh_ka_Buffer_Table];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE   procedure [velab].[loadHistoryInto_dwh_ka_Buffer_Table]
 as
 begin

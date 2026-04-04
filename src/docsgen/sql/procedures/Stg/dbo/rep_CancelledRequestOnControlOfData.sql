@@ -4,6 +4,9 @@
 -- Description:	Отчет о причинах отказа и аннулирования заявок на статусе "Контроль данных" по данным МФО 
 
 -- =============================================
+-- Usage: запуск процедуры с параметрами
+-- EXEC [dbo].[rep_CancelledRequestOnControlOfData];
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE PROCEDURE [dbo].[rep_CancelledRequestOnControlOfData] 
 	-- Add the parameters for the stored procedure here
 --	@DateReport dt,

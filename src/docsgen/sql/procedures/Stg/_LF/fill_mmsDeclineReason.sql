@@ -1,6 +1,11 @@
 
 
 
+-- Usage: запуск процедуры с параметрами
+-- EXEC [_LF].[fill_mmsDeclineReason]
+--      @mmsDeclineReasons = <value>,
+--      @debug = 0;
+-- Параметры соответствуют объявлению процедуры ниже.
 CREATE procedure [_LF].[fill_mmsDeclineReason]
 	@mmsDeclineReasons [_lf].utt_mmsDeclineReason readonly 
 	,@debug bit = 0
